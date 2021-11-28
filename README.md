@@ -1,4 +1,6 @@
-# uas-sbd
+# Project Akhir UAS Sistem Basis Data 
+Dosen: Pak Jumanto
+
 Project Akhir Sistem Basis Data 
 
 # ProjectAkhirSBD
