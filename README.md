@@ -1,3 +1,4 @@
+# BUDAYAKAN MEMBACA DULU GESS
 # Project Akhir UAS Sistem Basis Data 
 Dosen: Pak Jumanto
 
@@ -18,6 +19,7 @@ Project Akhir Sistem Basis Data sebagai UAS
 Install Requirements 
    - PHP 7.4.2 (minimal) 
    - WEB Server (XAMPP, Laragon, WAMPP, dll) disarankan Laragon biar so sweet  
+   - JANGAN LUPA BUAT DATABASE DI LOCAL YA kasih nama inventaris
 
 # DEVELOP 
 1. Pull Request untuk codingan di github (update) 
