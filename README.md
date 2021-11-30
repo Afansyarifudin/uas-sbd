@@ -37,7 +37,7 @@ Install Requirements
 
 # Develop by 
 1. Fidya Nur Styaningsih   (Fronted End) 
-2. Nur Afan Syarifudin     (Back ENd)
+2. Nur Afan Syarifudin     (Back End)
 3. Mario E Blipati         (Fronted End) 
 4. Rifki Anugraha S        (Fronted End) 
 5. Wiyan Herra Herviana    (Perancangan dan database)
