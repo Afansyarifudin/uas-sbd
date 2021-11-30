@@ -35,4 +35,9 @@ Install Requirements
 4. HTML 
 5. CSS (bootstrap)
 
-
+# Develop by 
+1. Fidya Nur Styaningsih 
+2. Nur Afan Syarifudin 
+3. Mario E Blipati 
+4. Rifki Anugraha S
+5. Wiyan Herra Herviana 
