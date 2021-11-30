@@ -36,8 +36,8 @@ Install Requirements
 5. CSS (bootstrap)
 
 # Develop by 
-1. Fidya Nur Styaningsih 
-2. Nur Afan Syarifudin 
-3. Mario E Blipati 
-4. Rifki Anugraha S
-5. Wiyan Herra Herviana 
+1. Fidya Nur Styaningsih   (Fronted End) 
+2. Nur Afan Syarifudin     (Back ENd)
+3. Mario E Blipati         (Fronted End) 
+4. Rifki Anugraha S        (Fronted End) 
+5. Wiyan Herra Herviana    (Perancangan dan database)
