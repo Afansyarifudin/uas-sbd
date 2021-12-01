@@ -1,11 +1,11 @@
 <?php
 
-class Home extends Controller
+class Dinventaris extends Controller
 {
     public function index()
     {
         $this->view('templates/header');
-        $this->view('home/index');
+        $this->view('d-inventaris/index');
         $this->view('templates/header');
     }
 }

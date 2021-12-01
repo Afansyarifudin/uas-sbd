@@ -1,11 +1,11 @@
 <?php
 
-class Home extends Controller
+class Gedung extends Controller
 {
     public function index()
     {
         $this->view('templates/header');
-        $this->view('home/index');
+        $this->view('gedung/index');
         $this->view('templates/header');
     }
 }
