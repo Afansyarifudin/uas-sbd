@@ -38,8 +38,8 @@
                           </div>
                         </div>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href=""><i class="fas fa-fw fa-folder"></i><span>Daftar Inventaris</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href=""><i class="fas fa-fw fa-folder"></i><span>Peminjaman</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-fw fa-folder"></i><span>Daftar Inventaris</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-fw fa-folder"></i><span>Peminjaman</span></a></li>
                 </ul>
                 <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
             </div>

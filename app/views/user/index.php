@@ -36,8 +36,6 @@
     </div>
 </div>
 
-</div>
-
 <!-- div ini jangan di hapus ya karena ada sambungannya sama yg atas -->
 </div> 
             
