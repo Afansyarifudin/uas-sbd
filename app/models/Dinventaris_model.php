@@ -1,6 +1,6 @@
 <?php
 
-class Dinventaris 
+class Dinventaris_model
 {
     
 }

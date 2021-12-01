@@ -1,6 +1,6 @@
 <?php
 
-class Gedung_mode 
+class Gedung_model
 {
     
 }
