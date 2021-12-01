@@ -24,6 +24,7 @@
                 <hr class="sidebar-divider my-0">
                 <ul class="navbar-nav text-light" id="accordionSidebar">
                     <li class="nav-item"><a class="nav-link active" href="#"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
+                    <li class="nav-item"><a class="nav-link " href="#"><i class="fas fa fa-user-circle-o"></i><span>User</span></a></li>
                     <li class="nav-item">
                         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
                           <i class="fas fa-fw fa-folder"></i>
@@ -31,18 +32,19 @@
                         </a>
                         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                           <div class="bg-white py-2 collapse-inner rounded">
-                            <a class="collapse-item" href="#">Data Barang</a>
                             <a class="collapse-item" href="#">Data Gedung</a>
-                            <a class="collapse-item" href="#">Data Ruangan</a>                        
+                            <a class="collapse-item" href="#">Data Ruangan</a>
+                            <a class="collapse-item" href="#">Data Barang</a>                        
                           </div>
                         </div>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-fw fa-folder"></i><span>Daftar Inventaris</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-fw fa-folder"></i><span>Peminjaman</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href=""><i class="fas fa-fw fa-folder"></i><span>Daftar Inventaris</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href=""><i class="fas fa-fw fa-folder"></i><span>Peminjaman</span></a></li>
                 </ul>
                 <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
             </div>
         </nav>
+        <!-- akhir sidebar -->
 
         <!-- Header (Search dan Profil) -->
         <div class="d-flex flex-column" id="content-wrapper">
