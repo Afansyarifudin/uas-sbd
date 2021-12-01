@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="<?= BASEURL; ?>/assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="<?= BASEURL; ?>/assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="<?= BASEURL; ?>/assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="img" href="<?= BASEURL; ?>/assets/img/logo-tab/logo1.png" >
 </head>
 
 <body id="page-top">
