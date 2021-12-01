@@ -17,14 +17,14 @@
 
         <!-- Sidebar -->
         <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
-            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="<?= BASEURL; ?>/home">
                     <div class="sidebar-brand-icon rotate-n-15"><i class="fas "></i></div>
                     <div class="sidebar-brand-text mx-3"><span>Inventori Barang</span></div>
                 </a>
                 <hr class="sidebar-divider my-0">
                 <ul class="navbar-nav text-light" id="accordionSidebar">
-                    <li class="nav-item"><a class="nav-link active" href="#"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
-                    <li class="nav-item"><a class="nav-link " href="#"><i class="fas fa fa-user-circle-o"></i><span>User</span></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="<?= BASEURL; ?>/home"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
+                    <li class="nav-item"><a class="nav-link " href="<?= BASEURL; ?>/user"><i class="fas fa fa-user-circle-o"></i><span>User</span></a></li>
                     <li class="nav-item">
                         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
                           <i class="fas fa-fw fa-folder"></i>
@@ -32,14 +32,14 @@
                         </a>
                         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                           <div class="bg-white py-2 collapse-inner rounded">
-                            <a class="collapse-item" href="#">Data Gedung</a>
-                            <a class="collapse-item" href="#">Data Ruangan</a>
-                            <a class="collapse-item" href="#">Data Barang</a>                        
+                            <a class="collapse-item" href="<?= BASEURL; ?>/gedung">Data Gedung</a>
+                            <a class="collapse-item" href="<?= BASEURL; ?>/ruangan">Data Ruangan</a>
+                            <a class="collapse-item" href="<?= BASEURL; ?>/barang">Data Barang</a>                        
                           </div>
                         </div>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-fw fa-folder"></i><span>Daftar Inventaris</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-fw fa-folder"></i><span>Peminjaman</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?= BASEURL; ?>/dinventaris"><i class="fas fa-fw fa-folder"></i><span>Daftar Inventaris</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?= BASEURL; ?>/peminjaman"><i class="fas fa-fw fa-folder"></i><span>Peminjaman</span></a></li>
                 </ul>
                 <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
             </div>
