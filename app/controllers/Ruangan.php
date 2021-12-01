@@ -6,6 +6,6 @@ class Ruangan extends Controller
     {
         $this->view('templates/header');
         $this->view('ruangan/index');
-        $this->view('templates/header');
+        $this->view('templates/footer');
     }
 }

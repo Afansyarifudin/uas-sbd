@@ -6,6 +6,6 @@ class Peminjaman extends Controller
     {
         $this->view('templates/header');
         $this->view('peminjaman/index');
-        $this->view('templates/header');
+        $this->view('templates/footer');
     }
 }

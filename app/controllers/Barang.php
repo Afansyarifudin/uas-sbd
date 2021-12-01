@@ -6,6 +6,6 @@ class Barang extends Controller
     {
         $this->view('templates/header');
         $this->view('barang/index');
-        $this->view('templates/header');
+        $this->view('templates/footer');
     }
 }

@@ -6,6 +6,6 @@ class Inventaris extends Controller
     {
         $this->view('templates/header');
         $this->view('inventaris/index');
-        $this->view('templates/header');
+        $this->view('templates/footer');
     }
 }
