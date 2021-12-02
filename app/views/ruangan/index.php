@@ -34,7 +34,7 @@
                         <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModal3Label">Tambah Data Barang</h5>
+                            <h5 class="modal-title" id="exampleModal3Label">Tambah Data Ruang</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">×</span>
                             </button>
@@ -44,12 +44,12 @@
                             <form action="" method="">
                             <div class="modal-body">
                                     <div class="form-group">
-                                        <label for="nama">Nama Ruangan</label>
-                                        <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Barang">
+                                        <label for="nama">Nama Ruang</label>
+                                        <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Ruang">
                                     </div>
                                     <div class="form-group">
-                                        <label for="merk">Keterangan Ruangan</label>
-                                        <input type="text" class="form-control" id="merk" name="keterangan" placeholder="Keterangan Ruangan">
+                                        <label for="keterangan">Keterangan Ruang</label>
+                                        <input type="text" class="form-control" id="keterangan" name="keterangan" placeholder="Keterangan Ruang">
                                     </div>
                             </div>
                             <div class="modal-footer">

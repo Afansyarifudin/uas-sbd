@@ -57,7 +57,7 @@
                                         <input type="date" class="form-control" id="tgl" name="tgl">
                                     </div>
                                     <div class="form-group">
-                                        <label for="Jumlah">Jumalah Barang</label>
+                                        <label for="Jumlah">Jumlah Barang</label>
                                         <input type="number" min="0" class="form-control" id="Jumlah" name="Jumlah" placeholder="Jumlah Barang">
                                     </div>
                                 </form>

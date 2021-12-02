@@ -10,8 +10,71 @@
             <h6 class="m-0 font-weight-bold text-primary">Data User</h6>
         </div>
 
-        <!-- tabel -->
         <div class="card-body">
+            <div class="row">
+                <div class="col-md-4 text-nowrap">
+                    <div id="dataTable_length" class="dataTables_length" aria-controls="dataTable"><label>Show&nbsp;<select class="form-control form-control-sm custom-select custom-select-sm">
+                                <option value="10" selected="">10</option>
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                            </select>&nbsp;</label></div>
+                </div>
+                <div class="col-md-6">
+                </div>
+                <div class="col-md-2">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
+                        <i class="fa fa-plus-circle"></i> Tambah Data
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModal3Label">Tambah Data User</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+
+                            <!-- form inputan -->
+                            <form action="" method="">
+                            <div class="modal-body">
+                                    <div class="form-group">
+                                        <label for="nama">Nama User</label>
+                                        <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama User">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="alamat">Alamat User</label>
+                                        <input type="text" class="form-control" id="alamat" name="alamat" placeholder="Alamat User">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="telp">No Telepon</label>
+                                        <input type="text" class="form-control" id="telp" name="telp" placeholder="No Telepon">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="telp">Level User</label>
+                                        <select class="custom-select">
+                                            <option selected>Pilih Level</option>
+                                            <option value="1">Mahasiswa</option>
+                                            <option value="2">Dosen</option>
+                                            <option value="3">Pegawai</option>
+                                        </select>
+                                    </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                                <button  type="submit" name="tambah" value="proses" class="btn btn-primary">Tambah</button>
+                            </div>
+                            </form>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+            <!-- Tabel -->
             <div class="table-responsive table mt-2" id="dataTable" role="grid" aria-describedby="dataTable_info">
                 <table class="table my-0" id="dataTable">
                     <thead>
@@ -32,7 +95,26 @@
                     </tbody>
                 </table>
             </div>
+
+            <div class="row">
+                <div class="col-md-6 align-self-center">
+                    <p id="dataTable_info" class="dataTables_info" role="status" aria-live="polite">Showing 1 to 10 of 27</p>
+                </div>
+                <div class="col-md-6">
+                    <nav class="d-lg-flex justify-content-lg-end dataTables_paginate paging_simple_numbers">
+                        <ul class="pagination">
+                            <li class="page-item disabled"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
+
+        
     </div>
 </div>
 
