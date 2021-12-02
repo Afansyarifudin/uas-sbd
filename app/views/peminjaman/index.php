@@ -43,10 +43,10 @@
                             <td>12-12-2021</td>
                             <td>Pinjam 3 hari</td>
                             <td class="text-center">
+                                <a href="#" class="badge badge-pill badge-primary"><i class="fa fa-info-circle"></i> Detail</a>
                                 <a href="#" class="badge badge-pill badge-warning"><i class="fa fa-pencil-square-o"></i> Edit</a>
                                 <a href="#" class="badge badge-pill badge-danger"><i class="fa fa-trash-o"></i> Hapus</a>
-                                <a href="#" class="badge badge-pill badge-primary"><i class="fa fa-info-circle"></i> Detail</a>
-                                <a href="#" class="badge badge-pill badge-success"><i class="fa fa-check-square-o"></i> Hapus</a>
+                                <a href="#" class="badge badge-pill badge-success"><i class="fa fa-check-square-o"></i> Kembalikan</a>
                             </td>
                         </tr>
                     </tbody>
