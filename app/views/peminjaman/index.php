@@ -43,11 +43,10 @@
                             <td>12-12-2021</td>
                             <td>Pinjam 3 hari</td>
                             <td class="text-center">
-                                <button type="button" class="btn btn-warning my-2"><i class="fa fa-pencil-square-o"></i> Edit</button>
-                                <button type="button" class="btn btn-danger"><i class="fa fa-trash-o"></i> Hapus</button>
-                                <br>
-                                <button type="button" class="btn btn-primary my-2"><i class="fa fa-info-circle"></i> Detail</button>
-                                <button type="button" class="btn btn-success "><i class="fa fa-check-square-o"></i> Kembalikan</button>
+                                <a href="#" class="badge badge-pill badge-warning"><i class="fa fa-pencil-square-o"></i> Edit</a>
+                                <a href="#" class="badge badge-pill badge-danger"><i class="fa fa-trash-o"></i> Hapus</a>
+                                <a href="#" class="badge badge-pill badge-primary"><i class="fa fa-info-circle"></i> Detail</a>
+                                <a href="#" class="badge badge-pill badge-success"><i class="fa fa-check-square-o"></i> Hapus</a>
                             </td>
                         </tr>
                     </tbody>
@@ -113,7 +112,7 @@
                             <td>12-12-2021</td>
                             <td>15-12-2021</td>
                             <td class="text-center">
-                                <button type="button" class="btn btn-primary my-2"><i class="fa fa-info-circle"></i> Detail</button>
+                                <a href="#" class="badge badge-pill badge-primary"><i class="fa fa-info-circle"></i> Detail</a>
                             </td>
                         </tr>
                     </tbody>

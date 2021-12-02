@@ -77,8 +77,8 @@
                             <td>R110</td>
                             <td>Lab Jarkom</td>
                             <td class="text-center">
-                                <button type="button" class="btn btn-warning my-2"><i class="fa fa-pencil-square-o"></i> Edit</button>
-                                <button type="button" class="btn btn-danger"><i class="fa fa-trash-o"></i> Hapus</button>
+                                <a href="#" class="badge badge-pill badge-warning"><i class="fa fa-pencil-square-o"></i> Edit</a>
+                                <a href="#" class="badge badge-pill badge-danger"><i class="fa fa-trash-o"></i> Hapus</a>
                             </td>
                         </tr>
                     </tbody>
