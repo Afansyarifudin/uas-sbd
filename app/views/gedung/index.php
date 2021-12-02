@@ -75,7 +75,7 @@
                             <td>D2</td>
                             <td>Layak</td>
                             <td class="text-center">
-                                <button type="button" class="btn btn-success my-2"><i class="fa fa-pencil-square-o"></i> Edit</button>
+                                <button type="button" class="btn btn-warning my-2"><i class="fa fa-pencil-square-o"></i> Edit</button>
                                 <button type="button" class="btn btn-danger"><i class="fa fa-trash-o"></i> Hapus</button>
                             </td>
                         </tr>
