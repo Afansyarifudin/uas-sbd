@@ -9,4 +9,9 @@ class User_model
     {
         $this->db = new Database;
     }
+
+    public function getAllUser()
+    {
+        $this->db->query('SELECT * FROM ' . $this->table);
+    }
 }
