@@ -89,6 +89,7 @@
                             <td class="text-center">
                                 <button type="button" class="btn btn-primary "><i class="fa fa-info-circle"></i> Detail</button>
                                 <button type="button" class="btn btn-warning "><i class="fa fa-pencil-square-o"></i> Edit</button>
+                                <button type="button" class="btn btn-danger"><i class="fa fa-trash-o"></i> Hapus</button>
                             </td>
                         </tr>
                         
