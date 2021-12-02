@@ -16,7 +16,8 @@
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div class="text-M font-weight-bold text-primary text-uppercase mb-1">
-                                Data User</div>
+                                <a class="collapse-item" href="<?= BASEURL; ?>/user">Data User</a>
+                            </div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800"></div>
                         </div>
                         <div class="col-auto">
@@ -35,7 +36,8 @@
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div class="text-m font-weight-bold text-success text-uppercase mb-1">
-                                Data Gedung</div>
+                                <a class="collapse-item" href="<?= BASEURL; ?>/gedung">Data Gedung</a>
+                            </div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800"></div>
                         </div>
                         <div class="col-auto">
@@ -53,7 +55,8 @@
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <div class="text-m font-weight-bold text-info text-uppercase mb-1">Data Ruangan
+                            <div class="text-m font-weight-bold text-info text-uppercase mb-1">
+                                <a class="collapse-item" href="<?= BASEURL; ?>/ruangan">Data Ruang</a>
                             </div>
                             <div class="row no-gutters align-items-center">
                                 <div class="col-auto">
@@ -77,7 +80,8 @@
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div class="text-m font-weight-bold text-warning text-uppercase mb-1">
-                                Data Barang</div>
+                                <a class="collapse-item" href="<?= BASEURL; ?>/barang">Data Barang</a>
+                            </div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800"></div>
                         </div>
                         <div class="col-auto">
@@ -95,7 +99,8 @@
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div class="text-M font-weight-bold text-primary text-uppercase mb-1">
-                                Daftar Inventaris</div>
+                                <a class="collapse-item" href="<?= BASEURL; ?>/d-inventaris">Daftar Inventaris</a>    
+                            </div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800"></div>
                         </div>
                         <div class="col-auto">
@@ -113,7 +118,8 @@
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div class="text-m font-weight-bold text-success text-uppercase mb-1">
-                                Peminjaman</div>
+                                <a class="collapse-item" href="<?= BASEURL; ?>/peminjaman">Peminjaman</a>    
+                            </div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800"></div>
                         </div>
                         <div class="col-auto">

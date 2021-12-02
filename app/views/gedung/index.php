@@ -20,12 +20,11 @@
                             </select>&nbsp;</label></div>
                 </div>
                 <div class="col-md-6">
-                    <div class="text-md-right dataTables_filter" id="dataTable_filter"><label><input type="search" class="form-control form-control-sm" aria-controls="dataTable" placeholder="Search"></label></div>
                 </div>
                 <div class="col-md-2">
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
-                        Tambah Data
+                        <i class="fa fa-plus-circle"></i> Tambah Data
                     </button>
                     
                     <!-- Modal -->
@@ -62,10 +61,10 @@
                     </div>
             </div>
             <!-- Tabel -->
-            <div class="table-responsive">
+            <div class="table-responsive mt-2">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
-                        <tr>
+                        <tr class="text-center">
                             <th>Nama Gedung</th>
                             <th>Keterangan Gedung</th>
                             <th>Aksi</th>
@@ -75,9 +74,9 @@
                         <tr>
                             <td>D2</td>
                             <td>Layak</td>
-                            <td>
-                                <button type="button" class="btn btn-success my-2">Edit</button>
-                                <button type="button" class="btn btn-danger">Hapus</button>
+                            <td class="text-center">
+                                <button type="button" class="btn btn-success my-2"><i class="fa fa-pencil-square-o"></i> Edit</button>
+                                <button type="button" class="btn btn-danger"><i class="fa fa-trash-o"></i> Hapus</button>
                             </td>
                         </tr>
                     </tbody>

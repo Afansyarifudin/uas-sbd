@@ -21,12 +21,11 @@
                             </select>&nbsp;</label></div>
                 </div>
                 <div class="col-md-6">
-                    <div class="text-md-right dataTables_filter" id="dataTable_filter"><label><input type="search" class="form-control form-control-sm" aria-controls="dataTable" placeholder="Search"></label></div>
                 </div>
                 <div class="col-md-2">
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
-                        Tambah Data
+                        <i class="fa fa-plus-circle"></i> Tambah Data
                     </button>
                     
                     <!-- Modal -->
@@ -72,17 +71,17 @@
                     </div>
                     </div>
             </div>
-            <div class="table-responsive table mt-2" id="dataTable" role="grid" aria-describedby="dataTable_info">
-                <table class="table my-0" id="dataTable">
+            <div class="table-responsive mt-2">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
-                        <tr>
+                        <tr class="text-center">
                             <th>Nama Barang</th>
                             <th>Merk Barang</th>
                             <th>Kondisi Barang</th>
                             <th>Tanggal Barang</th>
                             <th>Jumlah Barang</th>
                             <th>Aksi</th>
-                        </tr>
+                        </tr>    
                     </thead>
                     <tbody>
                         <tr>
@@ -91,12 +90,11 @@
                             <td>Layak Pakai</td>
                             <td>2008/11/28</td>
                             <td>2</td>
-                            <td>
-                                <button type="button" class="btn btn-success my-2">Edit</button>
-                                <button type="button" class="btn btn-danger">Hapus</button>
+                            <td class="text-center">
+                            <button type="button" class="btn btn-success my-2"><i class="fa fa-pencil-square-o"></i> Edit</button>
+                                <button type="button" class="btn btn-danger"><i class="fa fa-trash-o"></i> Hapus</button>
                             </td>
                         </tr>
-                        
                     </tbody>
                 </table>
             </div>
