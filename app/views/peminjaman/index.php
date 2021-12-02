@@ -31,7 +31,6 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr class="text-center">
-                            <th>Nama Ruang</th>
                             <th>Nama Peminjam</th>
                             <th>Tanggal Peminjaman</th>
                             <th>Keterangan Peminjaman</th>
@@ -40,7 +39,6 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>R110</td>
                             <td>Afan</td>
                             <td>12-12-2021</td>
                             <td>Pinjam 3 hari</td>

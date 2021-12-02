@@ -49,16 +49,16 @@
                                         <input type="text" class="form-control" id="merk" name="merk" placeholder="Merk Barang">
                                     </div>
                                     <div class="form-group">
-                                        <label for="kondisi">Kondisi Barang</label>
-                                        <input type="text" class="form-control" id="kondisi" name="kondisi" placeholder="Kondisi Barang">
-                                    </div>
-                                    <div class="form-group">
                                         <label for="tgl">Tanggal Barang</label>
                                         <input type="date" class="form-control" id="tgl" name="tgl">
                                     </div>
                                     <div class="form-group">
-                                        <label for="Jumlah">Jumlah Barang</label>
-                                        <input type="number" min="0" class="form-control" id="Jumlah" name="Jumlah" placeholder="Jumlah Barang">
+                                        <label for="jumlah">Jumlah Barang</label>
+                                        <input type="number" min="0" class="form-control" id="jumlah" name="julah" placeholder="Jumlah Barang">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="keterangan">Keterangan Barang</label>
+                                        <input type="text" min="0" class="form-control" id="keterangan" name="keterangan" placeholder="keterangan Barang">
                                     </div>
                                 </form>
                             </div>
@@ -77,9 +77,9 @@
                         <tr class="text-center">
                             <th>Nama Barang</th>
                             <th>Merk Barang</th>
-                            <th>Kondisi Barang</th>
                             <th>Tanggal Barang</th>
                             <th>Jumlah Barang</th>
+                            <th>Keterangan Barang</th>
                             <th>Aksi</th>
                         </tr>    
                     </thead>
@@ -87,9 +87,9 @@
                         <tr>
                             <td>Laptop</td>
                             <td>Asus</td>
-                            <td>Layak Pakai</td>
                             <td>2008/11/28</td>
                             <td>2</td>
+                            <td>Layak Pakai</td>
                             <td class="text-center">
                             <button type="button" class="btn btn-warning my-2"><i class="fa fa-pencil-square-o"></i> Edit</button>
                                 <button type="button" class="btn btn-danger"><i class="fa fa-trash-o"></i> Hapus</button>
