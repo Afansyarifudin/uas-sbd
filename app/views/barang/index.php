@@ -58,7 +58,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="Jumlah">Jumalah Barang</label>
-                                        <input type="number" class="form-control" id="Jumlah" name="Jumlah" placeholder="Jumlah Barang">
+                                        <input type="number" min="0" class="form-control" id="Jumlah" name="Jumlah" placeholder="Jumlah Barang">
                                     </div>
                                 </form>
                             </div>
