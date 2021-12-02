@@ -27,7 +27,7 @@
                     <li class="nav-item"><a class="nav-link active" href="<?= BASEURL; ?>/home"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
                     <li class="nav-item"><a class="nav-link " href="<?= BASEURL; ?>/user"><i class="fas fa fa-user-circle-o"></i><span>User</span></a></li>
                     <li class="nav-item">
-                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+                        <a class="nav-link collapsed" href="" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
                           <i class="fas fa-fw fa-folder"></i>
                           <span>Inventaris</span>
                         </a>
