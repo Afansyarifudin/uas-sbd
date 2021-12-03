@@ -42,12 +42,12 @@
                             <form action="" method="">
                             <div class="modal-body">
                                     <div class="form-group">
-                                        <label for="nama">Nama Gedung</label>
-                                        <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Gedung">
+                                        <label for="nama_gedung">Nama Gedung</label>
+                                        <input type="text" class="form-control" id="nama_gedung" name="nama_gedung" placeholder="Nama Gedung">
                                     </div>
                                     <div class="form-group">
-                                        <label for="keterangan">Keterangan Gedung</label>
-                                        <input type="text" class="form-control" id="keterangan" name="keterangan" placeholder="Keterangan Gedung">
+                                        <label for="ket_gedung">Keterangan Gedung</label>
+                                        <input type="text" class="form-control" id="ket_gedung" name="ket_gedung" placeholder="Keterangan Gedung">
                                     </div>
                             </div>
                             <div class="modal-footer">

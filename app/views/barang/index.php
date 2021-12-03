@@ -41,24 +41,24 @@
                             <div class="modal-body">
                                 <form>
                                     <div class="form-group">
-                                        <label for="nama">Nama Barang</label>
-                                        <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Barang">
+                                        <label for="nama_barang">Nama Barang</label>
+                                        <input type="text" class="form-control" id="nama_barang" name="nama_barang" placeholder="Nama Barang">
                                     </div>
                                     <div class="form-group">
-                                        <label for="merk">Merk Barang</label>
-                                        <input type="text" class="form-control" id="merk" name="merk" placeholder="Merk Barang">
+                                        <label for="merk_barang">Merk Barang</label>
+                                        <input type="text" class="form-control" id="merk_barang" name="merk_barang" placeholder="Merk Barang">
                                     </div>
                                     <div class="form-group">
-                                        <label for="tgl">Tanggal Barang</label>
-                                        <input type="date" class="form-control" id="tgl" name="tgl">
+                                        <label for="tgl_barang">Tanggal Barang</label>
+                                        <input type="date" class="form-control" id="tgl_barang" name="tgl_barang">
                                     </div>
                                     <div class="form-group">
-                                        <label for="jumlah">Jumlah Barang</label>
-                                        <input type="number" min="0" class="form-control" id="jumlah" name="julah" placeholder="Jumlah Barang">
+                                        <label for="jumlah_barang">Jumlah Barang</label>
+                                        <input type="number" min="0" class="form-control" id="jumlah_barang" name="jumlah_barang" placeholder="Jumlah Barang">
                                     </div>
                                     <div class="form-group">
-                                        <label for="keterangan">Keterangan Barang</label>
-                                        <input type="text" min="0" class="form-control" id="keterangan" name="keterangan" placeholder="keterangan Barang">
+                                        <label for="ket_barang">Keterangan Barang</label>
+                                        <input type="text" min="0" class="form-control" id="ket_barang" name="ket_barang" placeholder="keterangan Barang">
                                     </div>
                                 </form>
                             </div>
