@@ -79,8 +79,7 @@
                                         </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                                    <button  type="submit" name="tambah" value="proses" class="btn btn-primary">Tambah</button>
+                                    <button  type="submit" name="tambah" value="proses" class="btn btn-primary">Pinjam</button>
                                 </div>
                             <form>
                         </div>
