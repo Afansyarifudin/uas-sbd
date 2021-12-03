@@ -44,12 +44,12 @@
                             <form action="" method="">
                             <div class="modal-body">
                                     <div class="form-group">
-                                        <label for="nama">Nama Ruang</label>
-                                        <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Ruang">
+                                        <label for="nama_ruangan">Nama Ruang</label>
+                                        <input type="text" class="form-control" id="nama_ruangan" name="nama_ruangan" placeholder="Nama Ruang">
                                     </div>
                                     <div class="form-group">
-                                        <label for="keterangan">Keterangan Ruang</label>
-                                        <input type="text" class="form-control" id="keterangan" name="keterangan" placeholder="Keterangan Ruang">
+                                        <label for="ket_ruangan">Keterangan Ruang</label>
+                                        <input type="text" class="form-control" id="ket_ruangan" name="ket_ruangan" placeholder="Keterangan Ruang">
                                     </div>
                             </div>
                             <div class="modal-footer">

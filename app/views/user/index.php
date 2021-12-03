@@ -43,22 +43,22 @@
                                 <form action="<?= BASEURL; ?>/user/tambah" method="POST">
                                     <div class="modal-body">
                                         <div class="form-group">
-                                            <label for="nama">Nama User</label>
-                                            <input type="text" class="form-control" id="nama" name="nama">
+                                            <label for="nama_user">Nama User</label>
+                                            <input type="text" class="form-control" id="nama_user" name="nama_user">
                                         </div>
                                         <div class="form-group">
-                                            <label for="alamat">Alamat User</label>
-                                            <input type="text" class="form-control" id="alamat" name="alamat">
+                                            <label for="alamat_user">Alamat User</label>
+                                            <input type="text" class="form-control" id="alamat_user" name="alamat_user">
                                         </div>
                                         <div class="form-group">
-                                            <label for="telp">No Telepon</label>
-                                            <input type="number" class="form-control" id="telp" name="telp">
+                                            <label for="telp_user">No Telepon</label>
+                                            <input type="number" class="form-control" id="telp_user" name="telp_user">
                                         </div>
                                         <div class="form-group">
-                                            <label for="level">Level User</label>
-                                            <select class="form-control" id="level" name="level">
+                                            <label for="level_user">Level User</label>
+                                            <select class="form-control" id="level_user" name="level_user">
                                                 <option value="Mahasiswa">Mahasiswa</option>
-                                                <option value="DOsen">Dosen</option>
+                                                <option value="Dosen">Dosen</option>
                                                 <option value="Pegawai">Pegawai</option>
                                             </select>
                                         </div>
