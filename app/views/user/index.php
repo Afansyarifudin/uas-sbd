@@ -3,7 +3,7 @@
     <div class="d-sm-flex justify-content-between align-items-center mb-4">
         <h3 class="text-dark mb-0">Data User</h3>
     </div>
-    
+
     <!-- Content row isi -->
     <div class="card shadow mb-4 mr-4">
         <div class="card-header py-3">
@@ -24,55 +24,55 @@
                 </div>
                 <div class="col-md-2">
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#userModal">
                         <i class="fa fa-plus-circle"></i> Tambah Data
                     </button>
-                    
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModal3Label">Tambah Data User</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                            </button>
-                            </div>
 
-                            <!-- form inputan -->
-                            <form action="" method="">
-                            <div class="modal-body">
-                                    <div class="form-group">
-                                        <label for="nama">Nama User</label>
-                                        <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama User">
+                    <!-- Modal -->
+                    <div class="modal fade" id="userModal" tabindex="-1" role="dialog" aria-labelledby="judulModal" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="judulModal">Tambah Data User</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+
+                                <!-- form inputan -->
+                                <form action="" method="">
+                                    <div class="modal-body">
+                                        <div class="form-group">
+                                            <label for="nama">Nama User</label>
+                                            <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama User">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="alamat">Alamat User</label>
+                                            <input type="text" class="form-control" id="alamat" name="alamat" placeholder="Alamat User">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="telp">No Telepon</label>
+                                            <input type="text" class="form-control" id="telp" name="telp" placeholder="No Telepon">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="telp">Level User</label>
+                                            <select class="custom-select">
+                                                <option selected>Pilih Level</option>
+                                                <option value="1">Mahasiswa</option>
+                                                <option value="2">Dosen</option>
+                                                <option value="3">Pegawai</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="alamat">Alamat User</label>
-                                        <input type="text" class="form-control" id="alamat" name="alamat" placeholder="Alamat User">
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                                        <button type="submit" name="tambah" value="proses" class="btn btn-primary">Tambah Data</button>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="telp">No Telepon</label>
-                                        <input type="text" class="form-control" id="telp" name="telp" placeholder="No Telepon">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="telp">Level User</label>
-                                        <select class="custom-select">
-                                            <option selected>Pilih Level</option>
-                                            <option value="1">Mahasiswa</option>
-                                            <option value="2">Dosen</option>
-                                            <option value="3">Pegawai</option>
-                                        </select>
-                                    </div>
+                                </form>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                                <button  type="submit" name="tambah" value="proses" class="btn btn-primary">Tambah</button>
-                            </div>
-                            </form>
-                        </div>
                         </div>
                     </div>
-                    </div>
+                </div>
             </div>
             <!-- Tabel -->
             <div class="table-responsive table mt-2" id="dataTable" role="grid" aria-describedby="dataTable_info">
@@ -92,7 +92,7 @@
                                 <a href="#" class="badge badge-pill badge-danger"><i class="fa fa-trash-o"></i> Hapus</a>
                             </td>
                         </tr>
-                        
+
                     </tbody>
                 </table>
             </div>
@@ -115,18 +115,18 @@
             </div>
         </div>
 
-        
+
     </div>
 </div>
 
 <!-- div ini jangan di hapus ya karena ada sambungannya sama yg atas -->
-</div> 
-            
-        <!-- footer -->
-            <footer class="bg-white sticky-footer">
-                <div class="container my-auto">
-                    <div class="text-center my-auto copyright"><span>Copyright © kelompok 6</span></div>
-                </div>
-            </footer>
-        </div><a class="border rounded d-inline scroll-to-top" href="<?= BASEURL; ?>/user"><i class="fas fa-angle-up"></i></a>
+</div>
+
+<!-- footer -->
+<footer class="bg-white sticky-footer">
+    <div class="container my-auto">
+        <div class="text-center my-auto copyright"><span>Copyright © kelompok 6</span></div>
     </div>
+</footer>
+</div><a class="border rounded d-inline scroll-to-top" href="<?= BASEURL; ?>/user"><i class="fas fa-angle-up"></i></a>
+</div>
