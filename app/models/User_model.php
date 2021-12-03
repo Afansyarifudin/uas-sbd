@@ -15,11 +15,10 @@ class User_model
         $this->db->query('SELECT * FROM ' . $this->table);
     }
 
-    public function tambahDataUSer($data)
+    public function tambahDataUser($data)
     {
-        $query = "INSERT INTO user 
-                    VALUES 
-                    ('', :nama_user, :alamat_user, :telp_user, :level_user)";
+        $query = "INSERT INTO user (id_user, nama_user, alamat_user, telp_user, level_user)
+                    VALUES ('', :nama_user, :alamat_user, :telp_user, :level_user)";
 
         $this->db->query($query);
         $this->db->bind('nama_user', $data['nama']);
