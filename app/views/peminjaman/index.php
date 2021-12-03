@@ -22,8 +22,49 @@
                             </select>&nbsp;</label>
                     </div>
                 </div>
+                <div class="col-md-6">
+                </div>
                 <div class="col-md-2">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
+                        <i class="fa fa-plus-circle"></i> Tambah Data
+                    </button>
                     
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModal3Label">Peminjaman</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+
+                            <!-- form inputan -->
+                            <form action="" method="">
+                                <div class="modal-body">
+                                        <div class="form-group">
+                                            <label for="nama">Nama Peminjam</label>
+                                            <input type="text" class="form-control" id="nama" name="nama" >
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="tgl">Tanggal Peminjaman</label>
+                                            <input type="date" class="form-control" id="tgl" name="tgl" >
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="keterangan">Keterangan Peminjaman</label>
+                                            <input type="text" class="form-control" id="keterangan" name="keterangan">
+                                        </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                                    <button  type="submit" name="tambah" value="proses" class="btn btn-primary">Tambah</button>
+                                </div>
+                            <form>
+                        </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- Tabel -->
@@ -90,15 +131,54 @@
                 <div class="col-md-6">
                 </div>
                 <div class="col-md-2">
-                    
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        <i class="fa fa-plus-circle"></i> Tambah Data                    
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Pengembalian</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+                                
+                                    <!-- form inputan -->
+                                    <form action="" method="">
+                                    <div class="modal-body">
+                                            <div class="form-group">
+                                                <label for="nama">Nama Peminjam</label>
+                                                <input type="text" class="form-control" id="nama" name="nama">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="keterangan">Tanggal Peminjaman</label>
+                                                <input type="date" class="form-control" id="tgl" name="tgl">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="keterangan">Tanggal Pengembalian</label>
+                                                <input type="date" class="form-control" id="tgl" name="tgl">
+                                            </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                                        <button  type="submit" name="tambah" value="proses" class="btn btn-primary">Tambah</button>
+                                    </div>
+                                    </form>
+                                
+                            </div>
+                        </div>
                     </div>
+                </div>
             </div>
             <!-- Tabel -->
             <div class="table-responsive mt-2">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr class="text-center">
-                            <th>Nama Ruang</th>
                             <th>Nama Peminjam</th>
                             <th>Tanggal Peminjaman</th>
                             <th>Tanggal Kembali</th>
@@ -107,7 +187,6 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>R110</td>
                             <td>Afan</td>
                             <td>12-12-2021</td>
                             <td>15-12-2021</td>
