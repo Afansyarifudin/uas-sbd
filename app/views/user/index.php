@@ -58,7 +58,7 @@
                                             <label for="level_user">Level User</label>
                                             <select class="form-control" id="level_user" name="level_user">
                                                 <option value="Mahasiswa">Mahasiswa</option>
-                                                <option value="DOsen">Dosen</option>
+                                                <option value="Dosen">Dosen</option>
                                                 <option value="Pegawai">Pegawai</option>
                                             </select>
                                         </div>
