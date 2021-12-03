@@ -23,7 +23,7 @@ Install Requirements
 
 - PHP 7.4.2 (minimal)
 - WEB Server (XAMPP, Laragon, WAMPP, dll) disarankan Laragon biar so sweet
-- JANGAN LUPA BUAT DATABASE DI LOCAL YA kasih nama inventori
+- JANGAN LUPA BUAT DATABASE DI LOCAL YA kasih nama inventori databasenya menggunakan phpmyadmin
 
 # DEVELOP
 
