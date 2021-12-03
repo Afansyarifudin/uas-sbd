@@ -43,13 +43,49 @@
                                     <a href="#" class="badge badge-pill badge-primary"><i class="fa fa-info-circle"></i> Detail</a>
                                     <a href="#" class="badge badge-pill badge-warning"><i class="fa fa-pencil-square-o"></i> Edit</a>
                                     <a href="#" class="badge badge-pill badge-danger"><i class="fa fa-trash-o"></i> Hapus</a>
-                                    <a href="#" class="badge badge-pill badge-success"><i class="fa fa-check-square-o"></i> Pinjam</a>
+                                    <a href="#" class="badge badge-pill badge-success" data-toggle="modal" data-target="#exampleModal3"><i class="fa fa-check-square-o"></i> Pinjam</a>
                                 </td>
                             </tr>
                             
                         </tbody>
                     </table>
                 </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModal3Label">Peminjaman</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+
+                            <!-- form inputan -->
+                            <form action="" method="">
+                                <div class="modal-body">
+                                        <div class="form-group">
+                                            <label for="nama">Nama Peminjam</label>
+                                            <input type="text" class="form-control" id="nama" name="nama" >
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="tgl">Tanggal Peminjaman</label>
+                                            <input type="date" class="form-control" id="tgl" name="tgl" >
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="keterangan">Keterangan Peminjaman</label>
+                                            <input type="text" class="form-control" id="keterangan" name="keterangan">
+                                        </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                                    <button  type="submit" name="tambah" value="proses" class="btn btn-primary">Tambah</button>
+                                </div>
+                            <form>
+                        </div>
+                        </div>
+                    </div>
 
             <div class="row">
                 <div class="col-md-6 align-self-center">
