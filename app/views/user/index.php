@@ -29,7 +29,7 @@
                     </button>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="userModal" tabindex="-1" role="dialog" aria-labelledby="judulModal" aria-hidden="true">
+                    <div class="modal" id="userModal" tabindex="-1" role="dialog" aria-labelledby="judulModal" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -40,7 +40,7 @@
                                 </div>
 
                                 <!-- form inputan -->
-                                <form action="" method="">
+                                <form action="<?= BASEURL; ?>/user/tambah" method="POST">
                                     <div class="modal-body">
                                         <div class="form-group">
                                             <label for="nama">Nama User</label>
@@ -52,15 +52,14 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="telp">No Telepon</label>
-                                            <input type="text" class="form-control" id="telp" name="telp" placeholder="No Telepon">
+                                            <input type="number" class="form-control" id="telp" name="telp" placeholder="No Telepon">
                                         </div>
                                         <div class="form-group">
-                                            <label for="telp">Level User</label>
-                                            <select class="custom-select">
-                                                <option selected>Pilih Level</option>
-                                                <option value="1">Mahasiswa</option>
-                                                <option value="2">Dosen</option>
-                                                <option value="3">Pegawai</option>
+                                            <label for="level">Level User</label>
+                                            <select class="form-control" id="level" name="level">
+                                                <option value="Mahasiswa">Mahasiswa</option>
+                                                <option value="DOsen">Dosen</option>
+                                                <option value="Pegawai">Pegawai</option>
                                             </select>
                                         </div>
                                     </div>
