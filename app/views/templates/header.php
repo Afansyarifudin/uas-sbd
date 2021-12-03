@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="<?= BASEURL; ?>/assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="<?= BASEURL; ?>/assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="<?= BASEURL; ?>/assets/fonts/fontawesome5-overrides.min.css">
-    <link rel="img" href="<?= BASEURL; ?>/assets/img/logo-tab/logo1.png" >
+    <link rel="img" href="<?= BASEURL; ?>/assets/img/logo-tab/logo1.png">
 </head>
 
 <body id="page-top">
@@ -25,18 +25,18 @@
                 <hr class="sidebar-divider my-0">
                 <ul class="navbar-nav text-light" id="accordionSidebar">
                     <li class="nav-item"><a class="nav-link active" href="<?= BASEURL; ?>/home"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
-                    <li class="nav-item"><a class="nav-link " href="<?= BASEURL; ?>/user"><i class="fas fa fa-user-circle-o"></i><span>User</span></a></li>
+                    <li class="nav-item"><a class="nav-link " href="<?= BASEURL; ?>/user"><i class="fas fa fa-user-circle-o"></i><span>Data User</span></a></li>
                     <li class="nav-item">
                         <a class="nav-link collapsed" href="" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
-                          <i class="fas fa-fw fa-folder"></i>
-                          <span>Inventaris</span>
+                            <i class="fas fa-fw fa-folder"></i>
+                            <span>Inventaris</span>
                         </a>
                         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                          <div class="bg-white py-2 collapse-inner rounded">
-                            <a class="collapse-item" href="<?= BASEURL; ?>/gedung">Data Gedung</a>
-                            <a class="collapse-item" href="<?= BASEURL; ?>/ruangan">Data Ruangan</a>
-                            <a class="collapse-item" href="<?= BASEURL; ?>/barang">Data Barang</a>                        
-                          </div>
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <a class="collapse-item" href="<?= BASEURL; ?>/gedung">Data Gedung</a>
+                                <a class="collapse-item" href="<?= BASEURL; ?>/ruangan">Data Ruangan</a>
+                                <a class="collapse-item" href="<?= BASEURL; ?>/barang">Data Barang</a>
+                            </div>
                         </div>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="<?= BASEURL; ?>/dinventaris"><i class="fas fa-fw fa-folder"></i><span>Daftar Inventaris</span></a></li>
@@ -80,8 +80,3 @@
                 </nav>
 
                 <!-- Content -->
-                
-                
-            
-
-            

@@ -28,39 +28,39 @@
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
                         <i class="fa fa-plus-circle"></i> Tambah Data
                     </button>
-                    
+
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
                         <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModal3Label">Tambah Data Ruang</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                            </button>
-                            </div>
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModal3Label">Tambah Data Ruang</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
 
-                            <!-- form inputan -->
-                            <form action="" method="">
-                            <div class="modal-body">
-                                    <div class="form-group">
-                                        <label for="nama_ruangan">Nama Ruang</label>
-                                        <input type="text" class="form-control" id="nama_ruangan" name="nama_ruangan" placeholder="Nama Ruang">
+                                <!-- form inputan -->
+                                <form action="" method="POST">
+                                    <div class="modal-body">
+                                        <div class="form-group">
+                                            <label for="nama_ruangan">Nama Ruang</label>
+                                            <input type="text" class="form-control" id="nama_ruangan" name="nama_ruangan" placeholder="Nama Ruang">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="ket_ruangan">Keterangan Ruang</label>
+                                            <input type="text" class="form-control" id="ket_ruangan" name="ket_ruangan" placeholder="Keterangan Ruang">
+                                        </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="ket_ruangan">Keterangan Ruang</label>
-                                        <input type="text" class="form-control" id="ket_ruangan" name="ket_ruangan" placeholder="Keterangan Ruang">
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                                        <button type="submit" name="tambah" value="proses" class="btn btn-primary">Tambah</button>
                                     </div>
+                                </form>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                                <button  type="submit" name="tambah" value="proses" class="btn btn-primary">Tambah</button>
-                            </div>
-                            </form>
-                        </div>
                         </div>
                     </div>
-                    </div>
+                </div>
             </div>
             <!-- Tabel -->
             <div class="table-responsive mt-2">
@@ -106,13 +106,13 @@
 </div>
 
 <!-- div ini jangan di hapus ya karena ada sambungannya sama yg atas -->
-</div> 
-            
-        <!-- footer -->
-            <footer class="bg-white sticky-footer">
-                <div class="container my-auto">
-                    <div class="text-center my-auto copyright"><span>Copyright © kelompok 6</span></div>
-                </div>
-            </footer>
-        </div><a class="border rounded d-inline scroll-to-top" href="<?= BASEURL; ?>/ruangan"><i class="fas fa-angle-up"></i></a>
+</div>
+
+<!-- footer -->
+<footer class="bg-white sticky-footer">
+    <div class="container my-auto">
+        <div class="text-center my-auto copyright"><span>Copyright © kelompok 6</span></div>
     </div>
+</footer>
+</div><a class="border rounded d-inline scroll-to-top" href="<?= BASEURL; ?>/ruangan"><i class="fas fa-angle-up"></i></a>
+</div>
