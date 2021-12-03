@@ -44,15 +44,15 @@
                                     <div class="modal-body">
                                         <div class="form-group">
                                             <label for="nama">Nama User</label>
-                                            <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama User">
+                                            <input type="text" class="form-control" id="nama" name="nama">
                                         </div>
                                         <div class="form-group">
                                             <label for="alamat">Alamat User</label>
-                                            <input type="text" class="form-control" id="alamat" name="alamat" placeholder="Alamat User">
+                                            <input type="text" class="form-control" id="alamat" name="alamat">
                                         </div>
                                         <div class="form-group">
                                             <label for="telp">No Telepon</label>
-                                            <input type="number" class="form-control" id="telp" name="telp" placeholder="No Telepon">
+                                            <input type="number" class="form-control" id="telp" name="telp">
                                         </div>
                                         <div class="form-group">
                                             <label for="level">Level User</label>
