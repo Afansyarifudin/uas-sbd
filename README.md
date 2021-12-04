@@ -25,6 +25,9 @@ Install Requirements
 - WEB Server (XAMPP, Laragon, WAMPP, dll) disarankan Laragon biar so sweet
 - JANGAN LUPA BUAT DATABASE DI LOCAL YA kasih nama inventori; databasenya menggunakan phpmyadmin
 
+Database 
+![Sistem Informasi Peminjaman Barang-Detail-Tabel drawio](https://user-images.githubusercontent.com/68774609/144694872-bbcb8d51-bed4-445d-997c-276d0f582487.png)
+
 # DEVELOP
 
 1. Pull Request untuk codingan di github (update)
@@ -46,3 +49,6 @@ Install Requirements
 3. Mario E Blipati (Fronted End)
 4. Rifki Anugraha S (Fronted End)
 5. Wiyan Herra Herviana (Perancangan dan database)
+
+
+
