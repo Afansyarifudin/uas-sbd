@@ -8,7 +8,56 @@
     <!-- kontennya page disini -->
     <div class="card shadow">
         <div class="card-header py-3">
-            <p class="text-primary m-0 font-weight-bold">Data Ruangan</p>
+            <div class="row">
+            <div class="col-md-4">
+                <p class="text-primary m-2 font-weight-bold">Daftar Inventaris</p>
+            </div>
+            <div class="col-md-6">
+
+            </div>
+                <div class="col-md-2">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
+                        <i class="fa fa-plus-circle"></i> Tambah Data
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModal3Label">Tambah Data Ruang</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+
+                                <!-- form inputan -->
+                                <form action="<?= BASEURL; ?>/ruangan/tambah" method="POST">
+                                    <div class="modal-body">
+                                        <div class="form-group">
+                                            <label for="nama_inventaris">Nama Inventaris</label>
+                                            <input type="text" class="form-control" id="nama_inventaris" name="nama_inventaris" placeholder="Nama Inventaris">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="tgl_inventaris">Tanggal Inventaris</label>
+                                            <input type="thl" class="form-control" id="tgl_inventaris" name="tgl_inventaris" placeholder="Tanggal Inventaris">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="ket_inventaris">Keterangan Inventaris</label>
+                                            <input type="text" class="form-control" id="ket_inventaris" name="ket_inventaris" placeholder="Keterangan Inventaris">
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
+                                        <button type="submit" name="tambah" value="proses" class="btn btn-primary">Tambah</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="card-body">
             <div class="row">
