@@ -8,4 +8,12 @@ class Ruangan extends Controller
         $this->view('ruangan/index');
         $this->view('templates/footer');
     }
+
+    public function tambah()
+    {
+        if ($this->model('Ruangan_model')->tambahDataRuangan($_POST) > 0) {
+            header('Location: ' . BASEURL . '/ruangan');
+            exit;
+        }
+    }
 }

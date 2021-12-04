@@ -41,7 +41,7 @@
                                 </div>
 
                                 <!-- form inputan -->
-                                <form action="" method="POST">
+                                <form action="<?= BASEURL; ?>/ruangan/tambah" method="POST">
                                     <div class="modal-body">
                                         <div class="form-group">
                                             <label for="nama_ruangan">Nama Ruang</label>
