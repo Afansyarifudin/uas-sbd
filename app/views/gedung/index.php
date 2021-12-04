@@ -39,15 +39,15 @@
                                 </div>
 
                                 <!-- form inputan -->
-                                <form action="" method="POST">
+                                <form action="<?= BASEURL; ?>/gedung/tambah" method="POST">
                                     <div class="modal-body">
                                         <div class="form-group">
                                             <label for="nama_gedung">Nama Gedung</label>
-                                            <input type="text" class="form-control" id="nama_gedung" name="nama_gedung" placeholder="Nama Gedung">
+                                            <input type="text" class="form-control" id="nama_gedung" name="nama_gedung">
                                         </div>
                                         <div class="form-group">
                                             <label for="ket_gedung">Keterangan Gedung</label>
-                                            <input type="text" class="form-control" id="ket_gedung" name="ket_gedung" placeholder="Keterangan Gedung">
+                                            <input type="text" class="form-control" id="ket_gedung" name="ket_gedung">
                                         </div>
                                     </div>
                                     <div class="modal-footer">
