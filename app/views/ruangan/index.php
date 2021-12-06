@@ -53,11 +53,11 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="nama_ruangan">Nama Ruang</label>
-                                            <input type="text" class="form-control" id="nama_ruangan" name="nama_ruangan" placeholder="Nama Ruang">
+                                            <input type="text" class="form-control" id="nama_ruangan" name="nama_ruangan">
                                         </div>
                                         <div class="form-group">
                                             <label for="ket_ruangan">Keterangan Ruang</label>
-                                            <input type="text" class="form-control" id="ket_ruangan" name="ket_ruangan" placeholder="Keterangan Ruang">
+                                            <input type="text" class="form-control" id="ket_ruangan" name="ket_ruangan">
                                         </div>
                                     </div>
                                     <div class="modal-footer">
@@ -81,14 +81,16 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>R110</td>
-                            <td>Lab Jarkom</td>
-                            <td class="text-center">
-                                <a href="#" class="badge badge-pill badge-warning"><i class="fa fa-pencil-square-o"></i> Edit</a>
-                                <a href="#" class="badge badge-pill badge-danger"><i class="fa fa-trash-o"></i> Hapus</a>
-                            </td>
-                        </tr>
+                        <?php foreach ($data['ruang'] as $ruang) : ?>
+                            <tr>
+                                <td><?= $ruang['nama_ruangan']; ?></td>
+                                <td><?= $ruang['ket_ruangan']; ?></td>
+                                <td class="text-center">
+                                    <a href="#" class="badge badge-pill badge-warning"><i class="fa fa-pencil-square-o"></i> Edit</a>
+                                    <a href="#" class="badge badge-pill badge-danger"><i class="fa fa-trash-o"></i> Hapus</a>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
                     </tbody>
                 </table>
             </div>
