@@ -46,9 +46,9 @@
                                         <div class="form-group">
                                             <label for="id_gedung">Nama Gedung</label>
                                             <select class="form-control" id="id_gedung" name="id_gedung">
-                                                <option value="1">D1</option>
-                                                <option value="2">D2</option>
-                                                <option value="3">D3</option>
+                                                <?php foreach ($data['gdng'] as $gdng) : ?>
+                                                    <option value="<?= $gdng['id_gedung']; ?>"> <?= $gdng['nama_gedung']; ?> </option>
+                                                <?php endforeach; ?>
                                             </select>
                                         </div>
                                         <div class="form-group">

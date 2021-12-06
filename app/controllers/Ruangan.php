@@ -4,8 +4,9 @@ class Ruangan extends Controller
 {
     public function index()
     {
+        $data['gdng'] = $this->model('Gedung_model')->getAllGedung();
         $this->view('templates/header');
-        $this->view('ruangan/index');
+        $this->view('ruangan/index', $data);
         $this->view('templates/footer');
     }
 
