@@ -4,8 +4,9 @@ class Gedung extends Controller
 {
     public function index()
     {
+        $data['gdng'] = $this->model('Gedung_model')->getAllGedung();
         $this->view('templates/header');
-        $this->view('gedung/index');
+        $this->view('gedung/index', $data);
         $this->view('templates/footer');
     }
 

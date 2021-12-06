@@ -71,14 +71,17 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>D2</td>
-                            <td>Layak</td>
-                            <td class="text-center">
-                                <a href="#" class="badge badge-pill badge-warning"><i class="fa fa-pencil-square-o"></i> Edit</a>
-                                <a href="#" class="badge badge-pill badge-danger"><i class="fa fa-trash-o"></i> Hapus</a>
-                            </td>
-                        </tr>
+                        <?php foreach ($data['gdng'] as $gdng) : ?>
+                            <tr>
+                                <td> <?= $gdng['nama_gedung']; ?> </td>
+                                <td> <?= $gdng['ket_gedung']; ?> </td>
+
+                                <td class="text-center">
+                                    <a href="#" class="badge badge-pill badge-warning"><i class="fa fa-pencil-square-o"></i> Edit</a>
+                                    <a href="#" class="badge badge-pill badge-danger"><i class="fa fa-trash-o"></i> Hapus</a>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
                     </tbody>
                 </table>
             </div>

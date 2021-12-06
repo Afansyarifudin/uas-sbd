@@ -13,6 +13,7 @@ class Gedung_model
     public function getAllGedung()
     {
         $this->db->query('SELECT * FROM ' . $this->table);
+        return $this->db->resultSet();
     }
 
     public function tambahDataGedung($data)
