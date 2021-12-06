@@ -38,8 +38,9 @@
                                         <span aria-hidden="true">×</span>
                                     </button>
                                 </div>
-                                <div class="modal-body">
-                                    <form action="<?= BASEURL; ?>/barang/tambah" method="POST">
+
+                                <form action="<?= BASEURL; ?>/barang/tambah" method="POST">
+                                    <div class="modal-body">
                                         <div class="form-group">
                                             <label for="id_ruangan">Nama Ruang</label>
                                             <select class="form-control" id="id_ruangan" name="id_ruangan">
@@ -50,11 +51,11 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="nama_barang">Nama Barang</label>
-                                            <input type="text" class="form-control" id="nama_barang" name="nama_barang" placeholder="Nama Barang">
+                                            <input type="text" class="form-control" id="nama_barang" name="nama_barang">
                                         </div>
                                         <div class="form-group">
                                             <label for="merk_barang">Merk Barang</label>
-                                            <input type="text" class="form-control" id="merk_barang" name="merk_barang" placeholder="Merk Barang">
+                                            <input type="text" class="form-control" id="merk_barang" name="merk_barang">
                                         </div>
                                         <div class="form-group">
                                             <label for="tgl_barang">Tanggal Barang</label>
@@ -62,18 +63,19 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="jumlah_barang">Jumlah Barang</label>
-                                            <input type="number" min="0" class="form-control" id="jumlah_barang" name="jumlah_barang" placeholder="Jumlah Barang">
+                                            <input type="number" min="0" class="form-control" id="jumlah_barang" name="jumlah_barang">
                                         </div>
                                         <div class="form-group">
                                             <label for="ket_barang">Keterangan Barang</label>
-                                            <input type="text" min="0" class="form-control" id="ket_barang" name="ket_barang" placeholder="keterangan Barang">
+                                            <input type="text" min="0" class="form-control" id="ket_barang" name="ket_barang">
                                         </div>
-                                    </form>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
-                                    <button type="submit" name="tambah" value="proses" class="btn btn-primary">Tambah</button>
-                                </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
+                                            <button type="submit" name="tambah" value="proses" class="btn btn-primary">Tambah</button>
+                                        </div>
+                                    </div>
+                                </form>
+
                             </div>
                         </div>
                     </div>
