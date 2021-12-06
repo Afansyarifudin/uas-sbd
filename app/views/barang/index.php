@@ -40,6 +40,14 @@
                                 </div>
                                 <div class="modal-body">
                                     <form action="" method="POST">
+                                    <div class="form-group">
+                                            <label for="level_user">Nama Ruang</label>
+                                            <select class="form-control" id="level_user" name="level_user">
+                                                <option value="1">R1</option>
+                                                <option value="2">R2</option>
+                                                <option value="3">R3</option>
+                                            </select>
+                                        </div>
                                         <div class="form-group">
                                             <label for="nama_barang">Nama Barang</label>
                                             <input type="text" class="form-control" id="nama_barang" name="nama_barang" placeholder="Nama Barang">

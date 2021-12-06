@@ -44,6 +44,14 @@
                                 <form action="<?= BASEURL; ?>/ruangan/tambah" method="POST">
                                     <div class="modal-body">
                                         <div class="form-group">
+                                            <label for="level_user">Nama Gedung</label>
+                                            <select class="form-control" id="level_user" name="level_user">
+                                                <option value="1">D1</option>
+                                                <option value="2">D2</option>
+                                                <option value="3">D3</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
                                             <label for="nama_ruangan">Nama Ruang</label>
                                             <input type="text" class="form-control" id="nama_ruangan" name="nama_ruangan" placeholder="Nama Ruang">
                                         </div>
