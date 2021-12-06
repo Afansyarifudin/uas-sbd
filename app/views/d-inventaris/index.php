@@ -37,15 +37,19 @@
                                     <div class="modal-body">
                                         <div class="form-group">
                                             <label for="nama_inventaris">Nama Inventaris</label>
-                                            <input type="text" class="form-control" id="nama_inventaris" name="nama_inventaris" placeholder="Nama Inventaris">
+                                            <input type="text" class="form-control" id="nama_inventaris" name="nama_inventaris">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="id_ruangan">Ruang</label>
+                                            <input type="text" class="form-control" id="id_ruangan" name="id_ruangan">
                                         </div>
                                         <div class="form-group">
                                             <label for="tgl_inventaris">Tanggal Inventaris</label>
-                                            <input type="thl" class="form-control" id="tgl_inventaris" name="tgl_inventaris" placeholder="Tanggal Inventaris">
+                                            <input type="thl" class="form-control" id="tgl_inventaris" name="tgl_inventaris">
                                         </div>
                                         <div class="form-group">
                                             <label for="ket_inventaris">Keterangan Inventaris</label>
-                                            <input type="text" class="form-control" id="ket_inventaris" name="ket_inventaris" placeholder="Keterangan Inventaris">
+                                            <input type="text" class="form-control" id="ket_inventaris" name="ket_inventaris">
                                         </div>
                                     </div>
                                     <div class="modal-footer">
@@ -92,7 +96,7 @@
                                     <a href="#" class="badge badge-pill badge-primary"><i class="fa fa-info-circle"></i> Detail</a>
                                     <a href="#" class="badge badge-pill badge-warning"><i class="fa fa-pencil-square-o"></i> Edit</a>
                                     <a href="#" class="badge badge-pill badge-danger"><i class="fa fa-trash-o"></i> Hapus</a>
-                                    <a href="#" class="badge badge-pill badge-success" data-toggle="modal" data-target="#exampleModal3"><i class="fa fa-check-square-o"></i> Pinjam</a>
+                                    <a href="#" class="badge badge-pill badge-success" data-toggle="modal" data-target="#exampleModalPinjam"><i class="fa fa-check-square-o"></i> Pinjam</a>
                                 </td>
                             </tr>
                             
@@ -101,7 +105,7 @@
                 </div>
 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+                <div class="modal fade" id="exampleModalPinjam" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
