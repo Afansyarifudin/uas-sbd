@@ -69,10 +69,10 @@
                                             <label for="ket_barang">Keterangan Barang</label>
                                             <input type="text" min="0" class="form-control" id="ket_barang" name="ket_barang">
                                         </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
-                                            <button type="submit" name="tambah" value="proses" class="btn btn-primary">Tambah</button>
-                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
+                                        <button type="submit" name="tambah" value="proses" class="btn btn-primary">Tambah</button>
                                     </div>
                                 </form>
 
@@ -97,10 +97,10 @@
                         <?php foreach ($data['brg'] as $brg) : ?>
                             <tr>
                                 <td><?= $brg['nama_barang']; ?></td>
-                                <td><?= $ruang['merk_barang']; ?></td>
-                                <td><?= $ruang['tgl_barang']; ?></td>
-                                <td><?= $ruang['jumlah_barang']; ?></td>
-                                <td><?= $ruang['ket_barang']; ?></td>
+                                <td><?= $brg['merk_barang']; ?></td>
+                                <td><?= $brg['tgl_barang']; ?></td>
+                                <td><?= $brg['jumlah_barang']; ?></td>
+                                <td><?= $brg['ket_barang']; ?></td>
                                 <td class="text-center">
                                     <a href="#" class="badge badge-pill badge-warning"><i class="fa fa-pencil-square-o"></i> Edit</a>
                                     <a href="#" class="badge badge-pill badge-danger"><i class="fa fa-trash-o"></i> Hapus</a>
