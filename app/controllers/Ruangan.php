@@ -23,4 +23,17 @@ class Ruangan extends Controller
             exit;
         }
     }
+
+    public function hapus($id_ruangan)
+    {
+        if ($this->model('Ruangan_model')->hapusDataRuangan($id_ruangan) > 0) {
+            Flasher::setFlash('berhasil', 'dihapus', 'success');
+            header('Location: ' . BASEURL . '/ruangan');
+            exit;
+        } else {
+            Flasher::setFlash('gagal', 'dihapus', 'danger');
+            header('Location: ' . BASEURL . '/ruangan');
+            exit;
+        }
+    }
 }

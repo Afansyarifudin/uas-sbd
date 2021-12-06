@@ -22,4 +22,17 @@ class Gedung extends Controller
             exit;
         }
     }
+
+    public function hapus($id_gedung)
+    {
+        if ($this->model('Gedung_model')->hapusDataGedung($id_gedung) > 0) {
+            Flasher::setFlash('berhasil', 'dihapus', 'success');
+            header('Location: ' . BASEURL . '/gedung');
+            exit;
+        } else {
+            Flasher::setFlash('gagal', 'dihapus', 'danger');
+            header('Location: ' . BASEURL . '/gedung');
+            exit;
+        }
+    }
 }

@@ -34,4 +34,15 @@ class Barang_model
 
         return $this->db->rowCount();
     }
+
+    public function hapusDataBarang($id_barang)
+    {
+        $query = "DELETE FROM barang WHERE id_barang = :id_barang";
+
+        $this->db->query($query);
+        $this->db->bind('id_barang', $id_barang);
+        $this->db->execute();
+
+        return $this->db->rowCount();
+    }
 }

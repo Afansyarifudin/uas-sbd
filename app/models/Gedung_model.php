@@ -30,4 +30,16 @@ class Gedung_model
 
         return $this->db->rowCount();
     }
+
+    public function hapusDataGedung($id_gedung)
+    {
+        $query = "DELETE FROM gedung WHERE id_gedung = :id_gedung";
+
+        $this->db->query($query);
+        $this->db->bind('id_gedung', $id_gedung);
+
+        $this->db->execute();
+
+        return $this->db->rowCount();
+    }
 }

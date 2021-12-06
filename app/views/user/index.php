@@ -98,9 +98,9 @@
                                 <td> <?= $usr['nama_user']; ?> </td>
                                 <td class="text-center"> <?= $usr['level_user']; ?> </td>
                                 <td class="text-center">
-                                    <a href="#" class="badge badge-pill badge-primary"><i class="fa fa-info-circle"></i> Detail</a>
+                                    <a href="<?= BASEURL; ?>/user/detail/<?= $usr['id_user']; ?>" class="badge badge-pill badge-primary"><i class="fa fa-info-circle"></i> Detail</a>
                                     <a href="#" class="badge badge-pill badge-warning"><i class="fa fa-pencil-square-o"></i> Edit</a>
-                                    <a href="#" class="badge badge-pill badge-danger"><i class="fa fa-trash-o"></i> Hapus</a>
+                                    <a href="<?= BASEURL; ?>/user/hapus/<?= $usr['id_user']; ?>" class="badge badge-pill badge-danger" onclick="return confirm('Apakah Anda Yakin?');"><i class="fa fa-trash-o"></i> Hapus</a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

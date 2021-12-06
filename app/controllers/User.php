@@ -10,6 +10,14 @@ class User extends Controller
         $this->view('templates/footer');
     }
 
+    public function detail($id)
+    {
+        $data['usr'] = $this->model('User_model')->getUserById($id);
+        $this->view('templates/header');
+        $this->view('user/detail', $data);
+        $this->view('templates/footer');
+    }
+
     public function tambah()
     {
         if ($this->model('User_model')->tambahDataUser($_POST) > 0) {
@@ -18,6 +26,19 @@ class User extends Controller
             exit;
         } else {
             Flasher::setFlash('gagal', 'ditambahkan', 'danger');
+            header('Location: ' . BASEURL . '/user');
+            exit;
+        }
+    }
+
+    public function hapus($id_user)
+    {
+        if ($this->model('User_model')->hapusDataUser($id_user) > 0) {
+            Flasher::setFlash('berhasil', 'dihapus', 'success');
+            header('Location: ' . BASEURL . '/user');
+            exit;
+        } else {
+            Flasher::setFlash('gagal', 'dihapus', 'danger');
             header('Location: ' . BASEURL . '/user');
             exit;
         }

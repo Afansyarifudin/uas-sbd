@@ -87,7 +87,7 @@
 
                                 <td class="text-center">
                                     <a href="#" class="badge badge-pill badge-warning"><i class="fa fa-pencil-square-o"></i> Edit</a>
-                                    <a href="#" class="badge badge-pill badge-danger"><i class="fa fa-trash-o"></i> Hapus</a>
+                                    <a href="<?= BASEURL; ?>/gedung/hapus/<?= $gdng['id_gedung']; ?>" class="badge badge-pill badge-danger" onclick="return confirm('Apakah Anda Yakin?');"><i class=" fa fa-trash-o"></i> Hapus</a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

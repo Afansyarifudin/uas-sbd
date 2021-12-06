@@ -31,4 +31,16 @@ class Ruangan_model
 
         return $this->db->rowCount();
     }
+
+    public function hapusDataRuangan($id_ruangan)
+    {
+        $query = "DELETE FROM ruangan WHERE id_ruangan = :id_ruangan";
+
+        $this->db->query($query);
+        $this->db->bind('id_ruangan', $id_ruangan);
+
+        $this->db->execute();
+
+        return $this->db->rowCount();
+    }
 }
