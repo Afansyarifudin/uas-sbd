@@ -41,8 +41,8 @@
                                 <div class="modal-body">
                                     <form action="" method="POST">
                                     <div class="form-group">
-                                            <label for="level_user">Nama Ruang</label>
-                                            <select class="form-control" id="level_user" name="level_user">
+                                            <label for="id_ruangan">Nama Ruang</label>
+                                            <select class="form-control" id="id_ruangan" name="id_ruangan">
                                                 <option value="1">R1</option>
                                                 <option value="2">R2</option>
                                                 <option value="3">R3</option>
