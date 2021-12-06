@@ -14,10 +14,11 @@ class Ruangan_model
     {
         $this->db->query('SELECT * FROM ' . $this->table);
     }
+
     public function tambahDataRuangan($data)
     {
         $query = "INSERT INTO ruangan
                     VALUES 
-                ('', )";
+                ('',  )";
     }
 }
