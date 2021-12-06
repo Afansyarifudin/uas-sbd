@@ -79,18 +79,22 @@
                     <thead>
                         <tr>
                             <th>Nama User</th>
+                            <th class="text-center">Level </th>
                             <th class="text-center">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Nur Afan Syarifudin</td>
-                            <td class="text-center">
-                                <a href="#" class="badge badge-pill badge-primary"><i class="fa fa-info-circle"></i> Detail</a>
-                                <a href="#" class="badge badge-pill badge-warning"><i class="fa fa-pencil-square-o"></i> Edit</a>
-                                <a href="#" class="badge badge-pill badge-danger"><i class="fa fa-trash-o"></i> Hapus</a>
-                            </td>
-                        </tr>
+                        <?php foreach ($data['usr'] as $usr) : ?>
+                            <tr>
+                                <td> <?= $usr['nama_user']; ?> </td>
+                                <td class="text-center"> <?= $usr['level_user']; ?> </td>
+                                <td class="text-center">
+                                    <a href="#" class="badge badge-pill badge-primary"><i class="fa fa-info-circle"></i> Detail</a>
+                                    <a href="#" class="badge badge-pill badge-warning"><i class="fa fa-pencil-square-o"></i> Edit</a>
+                                    <a href="#" class="badge badge-pill badge-danger"><i class="fa fa-trash-o"></i> Hapus</a>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
 
                     </tbody>
                 </table>

@@ -13,6 +13,7 @@ class User_model
     public function getAllUser()
     {
         $this->db->query('SELECT * FROM ' . $this->table);
+        return $this->db->resultSet();
     }
 
     public function tambahDataUser($data)

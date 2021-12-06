@@ -4,8 +4,9 @@ class User extends Controller
 {
     public function index()
     {
+        $data['usr'] = $this->model('User_model')->getAllUser();
         $this->view('templates/header');
-        $this->view('user/index');
+        $this->view('user/index', $data);
         $this->view('templates/footer');
     }
 
