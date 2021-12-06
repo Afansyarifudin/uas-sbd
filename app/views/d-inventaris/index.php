@@ -40,8 +40,12 @@
                                             <input type="text" class="form-control" id="nama_inventaris" name="nama_inventaris">
                                         </div>
                                         <div class="form-group">
-                                            <label for="id_ruangan">Ruang</label>
-                                            <input type="text" class="form-control" id="id_ruangan" name="id_ruangan">
+                                            <label for="id_ruangan">Nama Ruang</label>
+                                            <select class="custom-select">
+                                                <option value="1">R1</option>
+                                                <option value="2">R2</option>
+                                                <option value="3">R3</option>
+                                            </select>
                                         </div>
                                         <div class="form-group">
                                             <label for="tgl_inventaris">Tanggal Inventaris</label>
