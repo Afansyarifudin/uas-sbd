@@ -39,13 +39,13 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <form action="" method="POST">
-                                    <div class="form-group">
+                                    <form action="<?= BASEURL; ?>/barang/tambah" method="POST">
+                                        <div class="form-group">
                                             <label for="id_ruangan">Nama Ruang</label>
                                             <select class="form-control" id="id_ruangan" name="id_ruangan">
-                                                <option value="1">R1</option>
-                                                <option value="2">R2</option>
-                                                <option value="3">R3</option>
+                                                <?php foreach ($data['ruang'] as $ruang) : ?>
+                                                    <option value="<?= $ruang['id_ruangan']; ?>"><?= $ruang['nama_ruangan']; ?></option>
+                                                <?php endforeach; ?>
                                             </select>
                                         </div>
                                         <div class="form-group">
@@ -92,17 +92,19 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Laptop</td>
-                            <td>Asus</td>
-                            <td>2008/11/28</td>
-                            <td>2</td>
-                            <td>Layak Pakai</td>
-                            <td class="text-center">
-                                <a href="#" class="badge badge-pill badge-warning"><i class="fa fa-pencil-square-o"></i> Edit</a>
-                                <a href="#" class="badge badge-pill badge-danger"><i class="fa fa-trash-o"></i> Hapus</a>
-                            </td>
-                        </tr>
+                        <?php foreach ($data['brg'] as $brg) : ?>
+                            <tr>
+                                <td><?= $brg['nama_barang']; ?></td>
+                                <td><?= $ruang['merk_barang']; ?></td>
+                                <td><?= $ruang['tgl_barang']; ?></td>
+                                <td><?= $ruang['jumlah_barang']; ?></td>
+                                <td><?= $ruang['ket_barang']; ?></td>
+                                <td class="text-center">
+                                    <a href="#" class="badge badge-pill badge-warning"><i class="fa fa-pencil-square-o"></i> Edit</a>
+                                    <a href="#" class="badge badge-pill badge-danger"><i class="fa fa-trash-o"></i> Hapus</a>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
                     </tbody>
                 </table>
             </div>
