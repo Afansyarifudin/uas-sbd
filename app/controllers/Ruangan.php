@@ -14,6 +14,11 @@ class Ruangan extends Controller
     public function tambah()
     {
         if ($this->model('Ruangan_model')->tambahDataRuangan($_POST) > 0) {
+            Flasher::setFlash('berhasil', 'ditambahkan', 'success');
+            header('Location: ' . BASEURL . '/ruangan');
+            exit;
+        } else {
+            Flasher::setFlash('gagal', 'ditambahkan', 'danger');
             header('Location: ' . BASEURL . '/ruangan');
             exit;
         }

@@ -5,6 +5,15 @@
         <h3 class="text-dark mb-0">Data Barang</h3>
     </div>
 
+    <!-- flasher  -->
+    <div class="row">
+        <div class="col-md-6">
+            <?php Flasher::flash(); ?>
+        </div>
+    </div>
+
+    <!-- akhir flasher -->
+
     <!-- kontennya page disini -->
     <div class="card shadow">
         <div class="card-header py-3">

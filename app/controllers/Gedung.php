@@ -13,6 +13,11 @@ class Gedung extends Controller
     public function tambah()
     {
         if ($this->model('Gedung_model')->tambahDataGedung($_POST) > 0) {
+            Flasher::setFlash('berhasil', 'ditambahkan', 'success');
+            header('Location: ' . BASEURL . '/gedung');
+            exit;
+        } else {
+            Flasher::setFlash('gagal', 'ditambahkan', 'danger');
             header('Location: ' . BASEURL . '/gedung');
             exit;
         }

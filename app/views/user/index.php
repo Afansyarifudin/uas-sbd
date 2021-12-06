@@ -4,6 +4,15 @@
         <h3 class="text-dark mb-0">Data User</h3>
     </div>
 
+    <!-- flasher  -->
+    <div class="row">
+        <div class="col-md-6">
+            <?php Flasher::flash(); ?>
+        </div>
+    </div>
+
+    <!-- akhir flasher -->
+
     <!-- Content row isi -->
     <div class="card shadow mb-4 mr-4">
         <div class="card-header py-3">

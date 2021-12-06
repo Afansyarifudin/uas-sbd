@@ -14,6 +14,11 @@ class Barang extends Controller
     public function tambah()
     {
         if ($this->model('Barang_model')->tambahDataBarang($_POST) > 0) {
+            Flasher::setFlash('berhasil', 'ditambahkan', 'success');
+            header('Location: ' . BASEURL . '/barang');
+            exit;
+        } else {
+            Flasher::setFlash('gagal', 'ditambahkan', 'danger');
             header('Location: ' . BASEURL . '/barang');
             exit;
         }

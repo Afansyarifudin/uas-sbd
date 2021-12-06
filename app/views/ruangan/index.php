@@ -6,6 +6,15 @@
         <h3 class="text-dark mb-0">Data Ruangan</h3>
     </div>
 
+    <!-- flasher  -->
+    <div class="row">
+        <div class="col-md-6">
+            <?php Flasher::flash(); ?>
+        </div>
+    </div>
+
+    <!-- akhir flasher -->
+
     <!-- Content row isi -->
     <div class="card shadow">
         <div class="card-header py-3">
