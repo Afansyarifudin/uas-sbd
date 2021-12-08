@@ -16,6 +16,13 @@ class Ruangan_model
         return $this->db->resultSet();
     }
 
+    public function getRuanganById($id)
+    {
+        $this->db->query('SELECT * FROM ' . $this->table . ' WHERE id_ruangan = :id_ruangan ');
+        $this->db->bind('id_ruangan', $id);
+        return $this->db->single();
+    }
+
     public function tambahDataRuangan($data)
     {
         $query = "INSERT INTO ruangan

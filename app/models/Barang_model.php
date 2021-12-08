@@ -16,6 +16,13 @@ class Barang_model
         return $this->db->resultSet();
     }
 
+    public function getBarangById($id)
+    {
+        $this->db->query('SELECT * FROM ' . $this->table . ' WHERE id_barang = :id_barang ');
+        $this->db->bind('id_barang', $id);
+        return $this->db->single();
+    }
+
     public function tambahDataBarang($data)
     {
         $query = "INSERT INTO barang 

@@ -16,6 +16,13 @@ class Gedung_model
         return $this->db->resultSet();
     }
 
+    public function getGedungById($id)
+    {
+        $this->db->query('SELECT * FROM ' . $this->table . ' WHERE id_gedung = :id_gedung ');
+        $this->db->bind('id_gedung', $id);
+        return $this->db->single();
+    }
+
     public function tambahDataGedung($data)
     {
         $query = "INSERT INTO gedung
