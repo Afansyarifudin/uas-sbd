@@ -51,4 +51,26 @@ class User_model
 
         return $this->db->rowCount();
     }
+
+    public function ubahDataUser($data)
+    {
+        $query = "UPDATE user SET 
+                    id_user = :id_user,
+                    nama_user = :nama_user,
+                    alamat_user = :alamat_user,
+                    telp_user = :telp_user,
+                    level_user = :level_user
+                WHERE id_user = :id_user";
+
+        $this->db->query($query);
+        $this->db->bind('nama_user', $data['nama_user']);
+        $this->db->bind('alamat_user', $data['alamat_user']);
+        $this->db->bind('telp_user', $data['telp_user']);
+        $this->db->bind('level_user', $data['level_user']);
+        $this->db->bind('id_user', $data['id_user']);
+
+        $this->db->execute();
+
+        return $this->db->rowCount();
+    }
 }

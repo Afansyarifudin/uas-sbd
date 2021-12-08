@@ -33,7 +33,7 @@
                 </div>
                 <div class="col-md-2">
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#userModal">
+                    <button type="button" class="btn btn-primary tombolTambahDataUser" data-toggle="modal" data-target="#userModal">
                         <i class="fa fa-plus-circle"></i> Tambah Data
                     </button>
 
@@ -42,15 +42,16 @@
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="judulModal">Tambah Data User</h5>
+                                    <h5 class="modal-title" id="judulModalUser">Tambah Data User</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">×</span>
                                     </button>
                                 </div>
 
-                                <!-- form inputan -->
-                                <form action="<?= BASEURL; ?>/user/tambah" method="POST">
-                                    <div class="modal-body">
+                                <div class="modal-body">
+                                    <!-- form inputan -->
+                                    <form action="<?= BASEURL; ?>/user/tambah" method="POST">
+                                        <input type="hidden" name="id_user" id="id_user">
                                         <div class="form-group">
                                             <label for="nama_user">Nama User</label>
                                             <input type="text" class="form-control" id="nama_user" name="nama_user">
@@ -71,11 +72,11 @@
                                                 <option value="Pegawai">Pegawai</option>
                                             </select>
                                         </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
-                                        <button type="submit" name="tambah" value="proses" class="btn btn-primary">Tambah Data</button>
-                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
+                                    <button type="submit" name="tambah" value="proses" class="btn btn-primary">Tambah Data</button>
+                                </div>
                                 </form>
                             </div>
                         </div>
@@ -99,7 +100,7 @@
                                 <td class="text-center"> <?= $usr['level_user']; ?> </td>
                                 <td class="text-center">
                                     <a href="<?= BASEURL; ?>/user/detail/<?= $usr['id_user']; ?>" class="badge badge-pill badge-primary"><i class="fa fa-info-circle"></i> Detail</a>
-                                    <a href="#" class="badge badge-pill badge-warning"><i class="fa fa-pencil-square-o"></i> Edit</a>
+                                    <a href="<?= BASEURL; ?>/user/ubah/<?= $usr['id_user']; ?>" class="badge badge-pill badge-warning tampilModalUbahUser" data-toggle="modal" data-target="#userModal" data-id_user="<?= $usr['id_user']; ?>"><i class="fa fa-pencil-square-o"></i> Edit</a>
                                     <a href="<?= BASEURL; ?>/user/hapus/<?= $usr['id_user']; ?>" class="badge badge-pill badge-danger" onclick="return confirm('Apakah Anda Yakin?');"><i class="fa fa-trash-o"></i> Hapus</a>
                                 </td>
                             </tr>

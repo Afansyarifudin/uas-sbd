@@ -4,6 +4,7 @@
         <script src="<?= BASEURL; ?>/assets/js/bs-init.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
         <script src="<?= BASEURL; ?>/assets/js/theme.js"></script>
+        <script src="<?= BASEURL; ?>/assets/js/script.js"></script>
         </body>
 
         </html>
