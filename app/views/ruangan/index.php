@@ -101,7 +101,7 @@
                                 <td><?= $ruang['nama_ruangan']; ?></td>
                                 <td><?= $ruang['ket_ruangan']; ?></td>
                                 <td class="text-center">
-                                    <a href="#" class="badge badge-pill badge-warning"><i class="fa fa-pencil-square-o"></i> Edit</a>
+                                    <a href="#" class="badge badge-pill badge-warning"><i class="fa fa-pencil-square-o"></i> Ubah</a>
                                     <a href="<?= BASEURL; ?>/ruangan/hapus/<?= $ruang['id_ruangan']; ?>" class="badge badge-pill badge-danger" onclick="return confirm('Apakah Anda Yakin?');"><i class="fa fa-trash-o"></i> Hapus</a>
                                 </td>
                             </tr>

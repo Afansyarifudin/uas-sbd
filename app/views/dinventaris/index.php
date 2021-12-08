@@ -114,7 +114,7 @@
                                 <td><?= $invent['ket_inventaris']; ?></td>
                                 <td class="text-center">
                                     <a href="#" class="badge badge-pill badge-primary"><i class="fa fa-info-circle"></i> Detail</a>
-                                    <a href="#" class="badge badge-pill badge-warning"><i class="fa fa-pencil-square-o"></i> Edit</a>
+                                    <a href="#" class="badge badge-pill badge-warning"><i class="fa fa-pencil-square-o"></i> Ubah</a>
                                     <a href="<?= BASEURL; ?>/dinventaris/hapus/<?= $invent['id_inventaris']; ?>" class="badge badge-pill badge-danger"><i class="fa fa-trash-o"></i> Hapus</a>
                                     <a href="#" class="badge badge-pill badge-success" data-toggle="modal" data-target="#exampleModalPinjam"><i class="fa fa-check-square-o"></i> Pinjam</a>
                                 </td>
