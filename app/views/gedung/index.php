@@ -32,18 +32,18 @@
                 </div>
                 <div class="col-md-2">
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gedungModal">
                         <i class="fa fa-plus-circle"></i> Tambah Data
                     </button>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+                    <div class="modal fade" id="gedungModal" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
 
                                 <!-- modal header -->
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModal3Label">Tambah Data Gedung</h5>
+                                    <h5 class="modal-title" id="judulModalGedung">Tambah Data Gedung</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">×</span>
                                     </button>
