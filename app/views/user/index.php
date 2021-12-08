@@ -41,6 +41,7 @@
                     <div class="modal" id="userModal" tabindex="-1" role="dialog" aria-labelledby="judulModal" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
+                                <!-- modal header -->
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="judulModalUser">Tambah Data User</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -48,6 +49,7 @@
                                     </button>
                                 </div>
 
+                                <!-- modal body -->
                                 <div class="modal-body">
                                     <!-- form inputan -->
                                     <form action="<?= BASEURL; ?>/user/tambah" method="POST">
@@ -73,6 +75,8 @@
                                             </select>
                                         </div>
                                 </div>
+
+                                <!-- modal footer -->
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
                                     <button type="submit" name="tambah" value="proses" class="btn btn-primary">Tambah Data</button>
