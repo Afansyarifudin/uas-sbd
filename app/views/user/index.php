@@ -108,7 +108,7 @@
                                 <td class="text-center"> <?= $usr['level_user']; ?> </td>
                                 <td class="text-center">
                                     <!-- <a href="<?= BASEURL; ?>/user/detail/<?= $usr['id_user']; ?>" class="badge badge-pill badge-primary"><i class="fa fa-info-circle"></i> Detail</a> -->
-                                    <a href="<?= BASEURL; ?>/user/ubah/<?= $usr['id_user']; ?>" class="badge badge-pill badge-warning tampilModalUbahUser" data-toggle="modal" data-target="#userModal" data-id_user="<?= $usr['id_user']; ?>"><i class="fa fa-pencil-square-o"></i> Edit</a>
+                                    <a href="<?= BASEURL; ?>/user/ubah/<?= $usr['id_user']; ?>" class="badge badge-pill badge-warning tampilModalUbahUser" data-toggle="modal" data-target="#userModal" data-id_user="<?= $usr['id_user']; ?>"><i class="fa fa-pencil-square-o"></i> Ubah</a>
                                     <a href="<?= BASEURL; ?>/user/hapus/<?= $usr['id_user']; ?>" class="badge badge-pill badge-danger" onclick="return confirm('Apakah Anda Yakin?');"><i class="fa fa-trash-o"></i> Hapus</a>
                                 </td>
                             </tr>
