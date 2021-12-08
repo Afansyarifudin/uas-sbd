@@ -25,7 +25,7 @@
                 <div class="col-md-6">
                 </div>
                 <div class="col-md-2">
-                    
+
                 </div>
             </div>
             <!-- Tabel -->
@@ -97,34 +97,40 @@
                     <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
+
+                                <!-- modal header -->
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="exampleModalLabel">Pengembalian</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">×</span>
+                                        <span aria-hidden="true">×</span>
                                     </button>
                                 </div>
-                                
+
+                                <!-- modal body -->
+                                <div class="modal-body">
                                     <!-- form inputan -->
                                     <form action="" method="">
-                                    <div class="modal-body">
-                                            <div class="form-group">
-                                                <label for="nama">Nama Peminjam</label>
-                                                <input type="text" class="form-control" id="nama" name="nama">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="keterangan">Tanggal Peminjaman</label>
-                                                <input type="date" class="form-control" id="tgl" name="tgl">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="keterangan">Tanggal Pengembalian</label>
-                                                <input type="date" class="form-control" id="tgl" name="tgl">
-                                            </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button  type="submit" name="tambah" value="proses" class="btn btn-primary">Kembalikan</button>
-                                    </div>
-                                    </form>
-                                
+
+                                        <div class="form-group">
+                                            <label for="nama">Nama Peminjam</label>
+                                            <input type="text" class="form-control" id="nama" name="nama">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="keterangan">Tanggal Peminjaman</label>
+                                            <input type="date" class="form-control" id="tgl" name="tgl">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="keterangan">Tanggal Pengembalian</label>
+                                            <input type="date" class="form-control" id="tgl" name="tgl">
+                                        </div>
+                                </div>
+
+                                <!-- modal footer -->
+                                <div class="modal-footer">
+                                    <button type="submit" name="tambah" value="proses" class="btn btn-primary">Kembalikan</button>
+                                </div>
+                                </form>
+
                             </div>
                         </div>
                     </div>
@@ -172,17 +178,17 @@
             </div>
         </div>
     </div>
-                    
+
 </div>
 
 <!-- div ini jangan di hapus ya karena ada sambungannya sama yg atas -->
-</div> 
-            
-        <!-- footer -->
-            <footer class="bg-white sticky-footer">
-                <div class="container my-auto">
-                    <div class="text-center my-auto copyright"><span>Copyright © kelompok 6</span></div>
-                </div>
-            </footer>
-        </div><a class="border rounded d-inline scroll-to-top" href="<?= BASEURL; ?>/peminjaman"><i class="fas fa-angle-up"></i></a>
+</div>
+
+<!-- footer -->
+<footer class="bg-white sticky-footer">
+    <div class="container my-auto">
+        <div class="text-center my-auto copyright"><span>Copyright © kelompok 6</span></div>
     </div>
+</footer>
+</div><a class="border rounded d-inline scroll-to-top" href="<?= BASEURL; ?>/peminjaman"><i class="fas fa-angle-up"></i></a>
+</div>

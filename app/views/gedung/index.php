@@ -40,6 +40,8 @@
                     <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
+
+                                <!-- modal header -->
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="exampleModal3Label">Tambah Data Gedung</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -47,9 +49,11 @@
                                     </button>
                                 </div>
 
-                                <!-- form inputan -->
-                                <form action="<?= BASEURL; ?>/gedung/tambah" method="POST">
-                                    <div class="modal-body">
+                                <!-- modal body -->
+                                <div class="modal-body">
+                                    <!-- form inputan -->
+                                    <form action="<?= BASEURL; ?>/gedung/tambah" method="POST">
+
                                         <div class="form-group">
                                             <label for="nama_gedung">Nama Gedung</label>
                                             <input type="text" class="form-control" id="nama_gedung" name="nama_gedung">
@@ -58,11 +62,13 @@
                                             <label for="ket_gedung">Keterangan Gedung</label>
                                             <input type="text" class="form-control" id="ket_gedung" name="ket_gedung">
                                         </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
-                                        <button type="submit" name="tambah" value="proses" class="btn btn-primary">Tambah</button>
-                                    </div>
+                                </div>
+
+                                <!-- modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
+                                    <button type="submit" name="tambah" value="proses" class="btn btn-primary">Tambah</button>
+                                </div>
                                 </form>
                             </div>
                         </div>
