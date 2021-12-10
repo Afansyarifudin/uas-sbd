@@ -1,13 +1,16 @@
+// DATA USER
+
 $(function() {
 
+    // tombol tambah data user 
     $('.tombolTambahDataUser').on('click', function() {
 
         $('#judulModalUser').html('Tambah Data User');
         $('.modal-footer button[type=submit]').html('Tambah Data');
 
     });
-    
-    
+      
+    // tombol ubah data user 
     $('.tampilModalUbahUser').on('click', function() {
 
         $('#judulModalUser').html('Ubah Data User');
@@ -35,6 +38,79 @@ $(function() {
 
     });
 
+
+});
+
+// DATA GEDUNG 
+
+$(function() {
+
+    // tombol tambah data gedung 
+    $('.tombolTambahDataGedung').on('click', function() {
+
+        $('#judulModalGedung').html('Tambah Data Gedung');
+        $('.modal-footer button[type=submit]').html('Tambah Data');
+
+    });
+
+    // tombol ubah data gedung 
+    $('.tampilModalUbahGedung').on('click', function() {
+
+        $('#judulModalGedung').html('Ubah Data Gedung');
+        $('.modal-footer button[type=submit]').html('Ubah Data');
+        $('.modal-body form').attr('action', 'http://localhost/uas-sbd/public/gedung/ubah');
+
+        const id_gedung = $(this).data('id_gedung');
+
+        $.ajax({
+            url: 'http://localhost/uas-sbd/public/gedung/getubahgedung',
+            data: {id_gedung : id_gedung},
+            method: 'post',
+            dataType: 'json',
+            success: function(data){
+                $('#nama_gedung').val(data.nama_gedung);
+                $('#ket_gedung').val(data.ket_gedung);
+                $('#id_gedung').val(data.id_gedung);
+
+            }
+
+        });
+
+    });
+
+});
+
+// DATA RUANGAN 
+$(function() {
+
+    // tombol tambah data ruangan
+
+
+    // tombol ubah data ruangan 
+
+
+});
+
+
+// DATA BARANG 
+$(function() {
+
+    // tombol tambah data barang 
+
+
+    // tombol ubah data barang 
+
+
+});
+
+
+
+// DAFTAR INVENTARIS 
+$(function() {
+
+    // tombol tambah daftar inventaris 
     
+
+    // tombol ubah daftar inventaris 
 
 });

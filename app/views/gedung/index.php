@@ -32,8 +32,8 @@
                 </div>
                 <div class="col-md-2">
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gedungModal">
-                        <i class="fa fa-plus-circle"></i> Tambah Data
+                    <button type="button" class="btn btn-primary tombolTambahDataGedung" data-toggle="modal" data-target="#gedungModal">
+                        <i class="fa fa-plus-circle "></i> Tambah Data
                     </button>
 
                     <!-- Modal -->
@@ -53,7 +53,7 @@
                                 <div class="modal-body">
                                     <!-- form inputan -->
                                     <form action="<?= BASEURL; ?>/gedung/tambah" method="POST">
-
+                                        <input type="hidden" name="id_gedung" id="id_gedung">
                                         <div class="form-group">
                                             <label for="nama_gedung">Nama Gedung</label>
                                             <input type="text" class="form-control" id="nama_gedung" name="nama_gedung">
@@ -92,7 +92,7 @@
                                 <td> <?= $gdng['ket_gedung']; ?> </td>
 
                                 <td class="text-center">
-                                    <a href="#" class="badge badge-pill badge-warning"><i class="fa fa-pencil-square-o"></i> Ubah</a>
+                                    <a href="<?= BASEURL; ?>/gedung/ubah/<?= $gdng['id_gedung']; ?>" class="badge badge-pill badge-warning tampilModalUbahGedung" data-toggle="modal" data-target="#gedungModal" data-id_gedung="<?= $gdng['id_gedung']; ?>"><i class="fa fa-pencil-square-o"></i> Ubah</a>
                                     <a href="<?= BASEURL; ?>/gedung/hapus/<?= $gdng['id_gedung']; ?>" class="badge badge-pill badge-danger" onclick="return confirm('Apakah Anda Yakin?');"><i class=" fa fa-trash-o"></i> Hapus</a>
                                 </td>
                             </tr>
