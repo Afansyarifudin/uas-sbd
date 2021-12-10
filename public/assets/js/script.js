@@ -121,10 +121,38 @@ $(function() {
 $(function() {
 
     // tombol tambah data barang 
+    $('.tombolTambahDataBarang').on('click', function() {
 
+        $('#judulModalBarang').html('Tambah Data Barang');
+        $('.modal-footer button[type=submit]').html('Tambah Data');
+    });
 
     // tombol ubah data barang 
+    $('.tampilModalUbahBarang').on('click', function() {
 
+        $('#judulModalBarang').html('Ubah Data Barang');
+        $('.modal-footer button[type=submit]').html('Ubah Data');
+        $('.modal-body form').attr('action', 'http://localhost/uas-sbd/public/barang/ubah');
+
+        const id_barang = $(this).data('id_barang');
+
+        $.ajax({
+            url: 'http://localhost/uas-sbd/public/barang/getubahbarang',
+            data: {id_barang : id_barang},
+            method: 'post',
+            dataType: 'json',
+            success: function(data){
+                $('#id_ruangan').val(data.id_ruangan);
+                $('#nama_barang').val(data.nama_barang);
+                $('#merk_barang').val(data.merk_barang);
+                $('#tgl_barang').val(data.tgl_barang);
+                $('#jumlah_barang').val(data.jumlah_barang);
+                $('#ket_barang').val(data.ket_barang);
+                $('#id_barang').val(data.id_barang);
+            }
+
+        });
+    });
 
 });
 

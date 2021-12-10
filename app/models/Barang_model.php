@@ -10,18 +10,19 @@ class Barang_model
         $this->db = new Database;
     }
 
-    public function getAllBarang()
-    {
-        $this->db->query('SELECT * FROM ' . $this->table);
-        return $this->db->resultSet();
-    }
-
     public function getBarangById($id)
     {
         $this->db->query('SELECT * FROM ' . $this->table . ' WHERE id_barang = :id_barang ');
         $this->db->bind('id_barang', $id);
         return $this->db->single();
     }
+
+    public function getAllBarang()
+    {
+        $this->db->query('SELECT * FROM ' . $this->table);
+        return $this->db->resultSet();
+    }
+
 
     public function tambahDataBarang($data)
     {
@@ -48,6 +49,33 @@ class Barang_model
 
         $this->db->query($query);
         $this->db->bind('id_barang', $id_barang);
+        $this->db->execute();
+
+        return $this->db->rowCount();
+    }
+
+    public function ubahDataBarang($data)
+    {
+        $query = "UPDATE barang SET 
+                    id_barang = :id_barang,
+                    id_ruangan = :id_ruangan,
+                    nama_barang = :nama_barang,
+                    merk_barang = :merk_barang,
+                    tgl_barang = :tgl_barang, 
+                    jumlah_barang = :jumlah_barang,
+                    ket_barang = :ket_barang
+                WHERE id_barang = :id_barang";
+
+
+        $this->db->query($query);
+        $this->db->bind('id_ruangan', $data['id_ruangan']);
+        $this->db->bind('nama_barang', $data['nama_barang']);
+        $this->db->bind('merk_barang', $data['merk_barang']);
+        $this->db->bind('tgl_barang', $data['tgl_barang']);
+        $this->db->bind('jumlah_barang', $data['jumlah_barang']);
+        $this->db->bind('ket_barang', $data['ket_barang']);
+        $this->db->bind('id_barang', $data['id_barang']);
+
         $this->db->execute();
 
         return $this->db->rowCount();

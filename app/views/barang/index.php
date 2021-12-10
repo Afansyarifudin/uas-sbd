@@ -33,7 +33,7 @@
                 </div>
                 <div class="col-md-2">
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#barangModal">
+                    <button type="button" class="btn btn-primary tombolTambahDataBarang" data-toggle="modal" data-target="#barangModal">
                         <i class="fa fa-plus-circle"></i> Tambah Data
                     </button>
 
@@ -53,6 +53,7 @@
                                 <!-- modal body -->
                                 <div class="modal-body">
                                     <form action="<?= BASEURL; ?>/barang/tambah" method="POST">
+                                        <input type="hidden" name="id_barang" id="id_barang">
                                         <div class="form-group">
                                             <label for="id_ruangan">Nama Ruang</label>
                                             <select class="form-control" id="id_ruangan" name="id_ruangan">
@@ -116,7 +117,7 @@
                                 <td><?= $brg['jumlah_barang']; ?></td>
                                 <td><?= $brg['ket_barang']; ?></td>
                                 <td class="text-center">
-                                    <a href="#" class="badge badge-pill badge-warning"><i class="fa fa-pencil-square-o"></i> Ubah</a>
+                                    <a href="<?= BASEURL; ?>/barang/ubah/<?= $brg['id_barang']; ?>" class="badge badge-pill badge-warning tampilModalUbahBarang" data-toggle="modal" data-target="#barangModal" data-id_barang="<?= $brg['id_barang']; ?>"><i class="fa fa-pencil-square-o"></i> Ubah</a>
                                     <a href="<?= BASEURL; ?>/barang/hapus/<?= $brg['id_barang']; ?>" class="badge badge-pill badge-danger" onclick="return confirm('Apakah Anda Yakin?');"><i class="fa fa-trash-o"></i> Hapus</a>
                                 </td>
                             </tr>

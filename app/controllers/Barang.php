@@ -36,4 +36,22 @@ class Barang extends Controller
             exit;
         }
     }
+
+    public function getubahbarang()
+    {
+        echo json_encode($this->model('Barang_model')->getBarangById($_POST['id_barang']));
+    }
+
+    public function ubah()
+    {
+        if ($this->model('Barang_model')->ubahDataBarang($_POST) > 0) {
+            Flasher::setFlash('berhasil', 'diubah', 'success');
+            header('Location: ' . BASEURL . '/barang');
+            exit;
+        } else {
+            Flasher::setFlash('gagal', 'diubah', 'danger');
+            header('Location: ' . BASEURL . '/barang');
+            exit;
+        }
+    }
 }
