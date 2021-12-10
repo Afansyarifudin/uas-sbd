@@ -36,4 +36,22 @@ class Ruangan extends Controller
             exit;
         }
     }
+
+    public function getubahruangan()
+    {
+        echo json_encode($this->model('Ruangan_model')->getRuanganById($_POST['id_ruangan']));
+    }
+
+    public function ubah()
+    {
+        if ($this->model('Ruangan_model')->ubahDataRuangan($_POST) > 0) {
+            Flasher::setFlash('berhasil', 'diubah', 'success');
+            header('Location: ' . BASEURL . '/ruangan');
+            exit;
+        } else {
+            Flasher::setFlash('gagal', 'diubah', 'danger');
+            header('Location: ' . BASEURL . '/ruangan');
+            exit;
+        }
+    }
 }

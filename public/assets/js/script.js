@@ -84,10 +84,35 @@ $(function() {
 $(function() {
 
     // tombol tambah data ruangan
+    $('.tombolTambahDataRuangan').on('click', function() {
 
+        $('#judulModalRuangan').html('Tambah Data Ruangan');
+        $('.modal-footer button[type=submit]').html('Tambah Data');
+    });
 
     // tombol ubah data ruangan 
+    $('.tampilModalUbahRuangan').on('click', function() {
 
+        $('#judulModalRuangan').html('Ubah Data Ruangan');
+        $('.modal-footer button[type=submit]').html('Ubah Data');
+        $('.modal-body form').attr('action', 'http://localhost/uas-sbd/public/ruangan/ubah');
+
+        const id_ruangan = $(this).data('id_ruangan');
+
+        $.ajax({
+            url: 'http://localhost/uas-sbd/public/ruangan/getubahruangan',
+            data: {id_ruangan : id_ruangan},
+            method: 'post',
+            dataType: 'json',
+            success: function(data){
+                $('#id_gedung').val(data.id_gedung);
+                $('#nama_ruangan').val(data.nama_ruangan);
+                $('#ket_ruangan').val(data.ket_ruangan);
+                $('#id_ruangan').val(data.id_ruangan);
+            }
+
+        });
+    });
 
 });
 
@@ -109,7 +134,7 @@ $(function() {
 $(function() {
 
     // tombol tambah daftar inventaris 
-    
+
 
     // tombol ubah daftar inventaris 
 

@@ -34,7 +34,7 @@
                 </div>
                 <div class="col-md-2">
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ruanganModal">
+                    <button type="button" class="btn btn-primary tombolTambahDataRuangan" data-toggle="modal" data-target="#ruanganModal">
                         <i class="fa fa-plus-circle"></i> Tambah Data
                     </button>
 
@@ -55,7 +55,7 @@
                                 <div class="modal-body">
                                     <!-- form inputan -->
                                     <form action="<?= BASEURL; ?>/ruangan/tambah" method="POST">
-
+                                        <input type="hidden" name="id_ruangan" id="id_ruangan">
                                         <div class="form-group">
                                             <label for="id_gedung">Nama Gedung</label>
                                             <select class="form-control" id="id_gedung" name="id_gedung">
@@ -101,7 +101,7 @@
                                 <td><?= $ruang['nama_ruangan']; ?></td>
                                 <td><?= $ruang['ket_ruangan']; ?></td>
                                 <td class="text-center">
-                                    <a href="#" class="badge badge-pill badge-warning"><i class="fa fa-pencil-square-o"></i> Ubah</a>
+                                    <a href="<?= BASEURL; ?>/ruangan/ubah/<?= $ruang['id_ruangan']; ?>" class="badge badge-pill badge-warning tampilModalUbahRuangan" data-toggle="modal" data-target="#ruanganModal" data-id_ruangan="<?= $ruang['id_ruangan']; ?>"><i class="fa fa-pencil-square-o"></i> Ubah</a>
                                     <a href="<?= BASEURL; ?>/ruangan/hapus/<?= $ruang['id_ruangan']; ?>" class="badge badge-pill badge-danger" onclick="return confirm('Apakah Anda Yakin?');"><i class="fa fa-trash-o"></i> Hapus</a>
                                 </td>
                             </tr>

@@ -10,18 +10,19 @@ class Ruangan_model
         $this->db = new Database;
     }
 
-    public function getAllRuangan()
-    {
-        $this->db->query('SELECT * FROM ' . $this->table);
-        return $this->db->resultSet();
-    }
-
     public function getRuanganById($id)
     {
         $this->db->query('SELECT * FROM ' . $this->table . ' WHERE id_ruangan = :id_ruangan ');
         $this->db->bind('id_ruangan', $id);
         return $this->db->single();
     }
+
+    public function getAllRuangan()
+    {
+        $this->db->query('SELECT * FROM ' . $this->table);
+        return $this->db->resultSet();
+    }
+
 
     public function tambahDataRuangan($data)
     {
@@ -45,6 +46,26 @@ class Ruangan_model
 
         $this->db->query($query);
         $this->db->bind('id_ruangan', $id_ruangan);
+
+        $this->db->execute();
+
+        return $this->db->rowCount();
+    }
+
+    public function ubahDataRuangan($data)
+    {
+        $query = "UPDATE ruangan SET 
+                    id_ruangan = :id_ruangan,
+                    id_gedung = :id_gedung,
+                    nama_ruangan = :nama_ruangan,
+                    ket_ruangan = :ket_ruangan
+                WHERE id_ruangan = :id_ruangan";
+
+        $this->db->query($query);
+        $this->db->bind('id_gedung', $data['id_gedung']);
+        $this->db->bind('nama_ruangan', $data['nama_ruangan']);
+        $this->db->bind('ket_ruangan', $data['ket_ruangan']);
+        $this->db->bind('id_ruangan', $data['id_ruangan']);
 
         $this->db->execute();
 
