@@ -6,6 +6,7 @@ class Dinventaris extends Controller
     {
         $data['ruang'] = $this->model('Ruangan_model')->getAllRuangan();
         $data['invent'] = $this->model('Dinventaris_model')->getAllInventaris();
+        $data['usr'] = $this->model('User_model')->getAllUser();
         $this->view('templates/header');
         $this->view('dinventaris/index', $data);
         $this->view('templates/footer');
@@ -33,6 +34,19 @@ class Dinventaris extends Controller
         } else {
             Flasher::setFlash('gagal', 'dihapus', 'danger');
             header('Location: ' . BASEURL . '/dinventaris');
+            exit;
+        }
+    }
+
+    public function pinjam()
+    {
+        if ($this->model('Peminjaman_model')->pinjamDataDinventaris($_POST) > 0) {
+            Flasher::setFlash('berhasil', 'dipinjam', 'success');
+            header('Location: ' . BASEURL . '/peminjaman');
+            exit;
+        } else {
+            Flasher::setFlash('gagal', 'dipinjam', 'danger');
+            header('Location: ' . BASEURL . '/peminjaman');
             exit;
         }
     }

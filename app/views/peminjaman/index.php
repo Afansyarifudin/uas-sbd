@@ -18,7 +18,7 @@
     <!-- Dipinjam -->
     <div class="card shadow">
         <div class="card-header py-3">
-            <p class="text-primary m-0 font-weight-bold">Dipinjam</p>
+            <p class="text-primary m-0 font-weight-bold">Daftar Peminjaman</p>
         </div>
         <div class="card-body">
             <div class="row">
@@ -49,16 +49,18 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Afan</td>
-                            <td>12-12-2021</td>
-                            <td>Pinjam 3 hari</td>
-                            <td class="text-center">
-                                <a href="#" class="badge badge-pill badge-warning"><i class="fa fa-pencil-square-o"></i> Ubah</a>
-                                <a href="#" class="badge badge-pill badge-danger"><i class="fa fa-trash-o"></i> Hapus</a>
-                                <a href="#" class="badge badge-pill badge-success" data-toggle="modal" data-target="#modalKembali"><i class="fa fa-check-square-o"></i> Kembalikan</a>
-                            </td>
-                        </tr>
+                        <?php foreach ($data['pmj'] as $pmj) : ?>
+                            <tr>
+                                <td><?= $pmj['nama_peminjam']; ?></td>
+                                <td><?= $pmj['tgl_peminjaman']; ?></td>
+                                <td><?= $pmj['ket_peminjaman']; ?></td>
+                                <td class="text-center">
+                                    <a href="<?= BASEURL; ?>/peminjaman/ubah/<?= $pmj['id_peminjaman']; ?>" class="badge badge-pill badge-warning"><i class="fa fa-pencil-square-o"></i> Ubah</a>
+                                    <a href="<?= BASEURL; ?>/peminjaman/hapus/<?= $pmj['id_peminjaman']; ?>" class="badge badge-pill badge-danger" onclick="return confirm('Apakah Anda Yakin?');"><i class="fa fa-trash-o"></i> Hapus</a>
+                                    <a href="#" class="badge badge-pill badge-success" data-toggle="modal" data-target="#modalKembali"><i class="fa fa-check-square-o"></i> Kembalikan</a>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
                     </tbody>
                 </table>
             </div>
@@ -85,7 +87,7 @@
     <!-- Selesai -->
     <div class="card shadow mt-3">
         <div class="card-header py-3">
-            <p class="text-primary m-0 font-weight-bold">Selesai</p>
+            <p class="text-primary m-0 font-weight-bold">Peminjaman Selesai</p>
         </div>
         <div class="card-body">
             <div class="row">
@@ -117,22 +119,22 @@
                                 <!-- modal body -->
                                 <div class="modal-body">
                                     <!-- form inputan -->
-                                    <form action="" method="POST">
+                                    <form action="<?= BASEURL; ?>/peminjaman/kembali" method="POST">
 
                                         <div class="form-group">
-                                            <label for="id_peminjaman">Nama Peminjam</label>
+                                            <label for="id_peminjaman">Tanggal Peminjaman</label>
                                             <select class="form-control" id="id_peminjaman" name="id_peminjaman">
-                                                <!-- <?php foreach ($data['gdng'] as $gdng) : ?>
-                                                <option value="<?= $gdng['id_gedung']; ?>"> <?= $gdng['nama_gedung']; ?> </option>
-                                            <?php endforeach; ?> -->
+                                                <?php foreach ($data['pmj'] as $pmj) : ?>
+                                                    <option value="<?= $pmj['id_peminjaman']; ?>"> <?= $pmj['tgl_peminjaman']; ?> </option>
+                                                <?php endforeach; ?>
                                             </select>
                                         </div>
                                         <div class="form-group">
                                             <label for="id_user">Nama User</label>
                                             <select class="form-control" id="id_user" name="id_user">
-                                                <!-- <?php foreach ($data['gdng'] as $gdng) : ?>
-                                            <option value="<?= $gdng['id_gedung']; ?>"> <?= $gdng['nama_gedung']; ?> </option>
-                                        <?php endforeach; ?> -->
+                                                <?php foreach ($data['usr'] as $usr) : ?>
+                                                    <option value="<?= $usr['id_user']; ?>"> <?= $usr['nama_user']; ?> </option>
+                                                <?php endforeach; ?>
                                             </select>
                                         </div>
                                         <div class="form-group">
@@ -156,26 +158,26 @@
                     </div>
                 </div>
             </div>
-            <!-- Tabel -->
+            <!-- Tabel selesai -->
             <div class="table-responsive mt-2">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr class="text-center">
-                            <th>Nama Peminjam</th>
-                            <th>Tanggal Peminjaman</th>
+                            <th>Nama Pengembali</th>
                             <th>Tanggal Kembali</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Afan</td>
-                            <td>12-12-2021</td>
-                            <td>15-12-2021</td>
-                            <td class="text-center">
-                                <a href="#" class="badge badge-pill badge-primary"><i class="fa fa-info-circle"></i> Detail</a>
-                            </td>
-                        </tr>
+                        <?php foreach ($data['peng'] as $peng) : ?>
+                            <tr>
+                                <td><?= $peng['nama_pengembali']; ?></td>
+                                <td><?= $peng['tgl_kembali']; ?></td>
+                                <td class="text-center">
+                                    <a href="#" class="badge badge-pill badge-primary"><i class="fa fa-info-circle"></i> Detail</a>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
                     </tbody>
                 </table>
             </div>

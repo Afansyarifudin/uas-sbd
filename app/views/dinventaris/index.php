@@ -136,22 +136,22 @@
                         </div>
 
                         <!-- form inputan -->
-                        <form action="" method="">
+                        <form action="<?= BASEURL; ?>/dinventaris/pinjam" method="POST">
                             <div class="modal-body">
                                 <div class="form-group">
                                     <label for="id_user">Nama User</label>
                                     <select class="form-control" id="id_user" name="id_user">
-                                        <!-- <?php foreach ($data['gdng'] as $gdng) : ?>
-                                            <option value="<?= $gdng['id_gedung']; ?>"> <?= $gdng['nama_gedung']; ?> </option>
-                                        <?php endforeach; ?> -->
+                                        <?php foreach ($data['usr'] as $usr) : ?>
+                                            <option value="<?= $usr['id_user']; ?>"> <?= $usr['nama_user']; ?> </option>
+                                        <?php endforeach; ?>
                                     </select>
                                 </div>
                                 <div class="form-group">
                                     <label for="id_inventaris">Nama Inventaris</label>
                                     <select class="form-control" id="id_inventaris" name="id_inventaris">
-                                        <!-- <?php foreach ($data['gdng'] as $gdng) : ?>
-                                            <option value="<?= $gdng['id_gedung']; ?>"> <?= $gdng['nama_gedung']; ?> </option>
-                                        <?php endforeach; ?> -->
+                                        <?php foreach ($data['invent'] as $invent) : ?>
+                                            <option value="<?= $invent['id_inventaris']; ?>"> <?= $invent['nama_inventaris']; ?> </option>
+                                        <?php endforeach; ?>
                                     </select>
                                 </div>
                                 <div class="form-group">
