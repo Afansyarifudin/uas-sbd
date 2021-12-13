@@ -111,16 +111,20 @@
                                     <form action="" method="POST">
 
                                         <div class="form-group">
-                                            <label for="nama">Nama Peminjam</label>
-                                            <input type="text" class="form-control" id="nama" name="nama">
+                                            <label for="id_peminjaman">Nama Peminjam</label>
+                                            <input type="text" class="form-control" id="id_peminjaman" name="id_peminjaman">
                                         </div>
                                         <div class="form-group">
-                                            <label for="keterangan">Tanggal Peminjaman</label>
-                                            <input type="date" class="form-control" id="tgl" name="tgl">
+                                            <label for="id_user">Nama User</label>
+                                            <input type="text" class="form-control" id="id_user" name="id_user">
                                         </div>
                                         <div class="form-group">
-                                            <label for="keterangan">Tanggal Pengembalian</label>
-                                            <input type="date" class="form-control" id="tgl" name="tgl">
+                                            <label for="nama_pengembali">Nama Pengembali</label>
+                                            <input type="text" class="form-control" id="nama_pengembali" name="nama_pengembali">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="tgl_kembali">Tanggal Pengembalian</label>
+                                            <input type="date" class="form-control" id="tgl_kembali" name="tgl_kembali">
                                         </div>
                                 </div>
 

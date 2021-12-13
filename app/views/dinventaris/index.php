@@ -125,7 +125,7 @@
             </div>
 
             <!-- Modal -->
-            <div class="modal fade" id="modalodalPinjam" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+            <div class="modal fade" id="modalPinjam" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -139,16 +139,24 @@
                         <form action="" method="">
                             <div class="modal-body">
                                 <div class="form-group">
-                                    <label for="nama">Nama Peminjam</label>
-                                    <input type="text" class="form-control" id="nama" name="nama">
+                                    <label for="id_user">Nama User</label>
+                                    <input type="text" class="form-control" id="id_user" name="id_user">
                                 </div>
                                 <div class="form-group">
-                                    <label for="tgl">Tanggal Peminjaman</label>
-                                    <input type="date" class="form-control" id="tgl" name="tgl">
+                                    <label for="id_inventaris">Nama Inventaris</label>
+                                    <input type="text" class="form-control" id="id_inventaris" name="id_inventaris">
                                 </div>
                                 <div class="form-group">
-                                    <label for="keterangan">Keterangan Peminjaman</label>
-                                    <input type="text" class="form-control" id="keterangan" name="keterangan">
+                                    <label for="nama_peminjam">Nama Peminjam</label>
+                                    <input type="text" class="form-control" id="nama_peminjam" name="nama_peminjam">
+                                </div>
+                                <div class="form-group">
+                                    <label for="tgl_peminjaman">Tanggal Peminjaman</label>
+                                    <input type="date" class="form-control" id="tgl_peminjaman" name="tgl_peminjaman">
+                                </div>
+                                <div class="form-group">
+                                    <label for="ket_peminjaman">Keterangan Peminjaman</label>
+                                    <input type="text" class="form-control" id="ket_peminjaman" name="ket_peminjaman">
                                 </div>
                             </div>
                             <div class="modal-footer">
