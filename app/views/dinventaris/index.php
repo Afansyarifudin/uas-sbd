@@ -26,18 +26,18 @@
                 </div>
                 <div class="col-md-2">
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#inventarisModal">
                         <i class="fa fa-plus-circle"></i> Tambah Data
                     </button>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+                    <div class="modal fade" id="inventarisModal" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
 
                                 <!-- modal header -->
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModal3Label">Tambah Data Inventaris</h5>
+                                    <h5 class="modal-title" id="judulModalInventaris">Tambah Data Inventaris</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">×</span>
                                     </button>
@@ -113,10 +113,10 @@
                                 <td><?= $invent['tgl_inventaris']; ?></td>
                                 <td><?= $invent['ket_inventaris']; ?></td>
                                 <td class="text-center">
-                                    <a href="#" class="badge badge-pill badge-primary"><i class="fa fa-info-circle"></i> Detail</a>
+
                                     <a href="#" class="badge badge-pill badge-warning"><i class="fa fa-pencil-square-o"></i> Ubah</a>
                                     <a href="<?= BASEURL; ?>/dinventaris/hapus/<?= $invent['id_inventaris']; ?>" class="badge badge-pill badge-danger" onclick="return confirm('Apakah Anda Yakin?');"><i class="fa fa-trash-o"></i> Hapus</a>
-                                    <a href="#" class="badge badge-pill badge-success" data-toggle="modal" data-target="#exampleModalPinjam"><i class="fa fa-check-square-o"></i> Pinjam</a>
+                                    <a href="#" class="badge badge-pill badge-success" data-toggle="modal" data-target="#modalPinjam"><i class="fa fa-check-square-o"></i> Pinjam</a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>
@@ -125,7 +125,7 @@
             </div>
 
             <!-- Modal -->
-            <div class="modal fade" id="exampleModalPinjam" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+            <div class="modal fade" id="modalodalPinjam" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
