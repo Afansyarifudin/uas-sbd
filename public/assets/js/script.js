@@ -167,3 +167,13 @@ $(function() {
     // tombol ubah daftar inventaris 
 
 });
+
+// PEMINJAMAN
+$(function() {
+
+    // tombol tambah peminjaman 
+
+
+    // tombol ubah peminjaman
+
+});
