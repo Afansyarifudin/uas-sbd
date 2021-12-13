@@ -140,11 +140,19 @@
                             <div class="modal-body">
                                 <div class="form-group">
                                     <label for="id_user">Nama User</label>
-                                    <input type="text" class="form-control" id="id_user" name="id_user">
+                                    <select class="form-control" id="id_user" name="id_user">
+                                        <!-- <?php foreach ($data['gdng'] as $gdng) : ?>
+                                            <option value="<?= $gdng['id_gedung']; ?>"> <?= $gdng['nama_gedung']; ?> </option>
+                                        <?php endforeach; ?> -->
+                                    </select>
                                 </div>
                                 <div class="form-group">
                                     <label for="id_inventaris">Nama Inventaris</label>
-                                    <input type="text" class="form-control" id="id_inventaris" name="id_inventaris">
+                                    <select class="form-control" id="id_inventaris" name="id_inventaris">
+                                        <!-- <?php foreach ($data['gdng'] as $gdng) : ?>
+                                            <option value="<?= $gdng['id_gedung']; ?>"> <?= $gdng['nama_gedung']; ?> </option>
+                                        <?php endforeach; ?> -->
+                                    </select>
                                 </div>
                                 <div class="form-group">
                                     <label for="nama_peminjam">Nama Peminjam</label>
