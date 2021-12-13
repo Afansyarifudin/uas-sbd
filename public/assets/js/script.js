@@ -162,9 +162,39 @@ $(function() {
 $(function() {
 
     // tombol tambah daftar inventaris 
+    $('.tombolTambahDataInventaris').on('click', function() {
 
+        $('#judulModalInventaris').html('Ubah Data Inventaris');
+        $('.modal-footer button[type=submit]').html('Tambah Data');
+
+    });
 
     // tombol ubah daftar inventaris 
+    $('.tampilModalUbahInventaris').on('click', function() {
+
+        $('#judulModalInventaris').html('Ubah Data Inventaris');
+        $('.modal-footer button[type=submit]').html('Ubah Data');
+        $('.modal-body form').attr('action', 'http://localhost/uas-sbd/public/dinventaris/ubah');
+
+        const id_inventaris = $(this).data('id_inventaris');
+
+        $.ajax({
+            url: 'http://localhost/uas-sbd/public/dinventaris/getubahinventaris',
+            data: {id_inventaris : id_inventaris},
+            method: 'post',
+            dataType: 'json',
+            success: function(data){
+                $('#id_ruangan').val(data.id_ruangan);
+                $('#nama_inventaris').val(data.nama_inventaris);
+                $('#tgl_inventaris').val(data.tgl_inventaris);
+                $('#ket_inventaris').val(data.ket_inventaris);
+                $('#id_inventaris').val(data.id_inventaris);
+
+            }
+
+        });
+
+    });
 
 });
 

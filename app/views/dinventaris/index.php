@@ -26,7 +26,7 @@
                 </div>
                 <div class="col-md-2">
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#inventarisModal">
+                    <button type="button" class="btn btn-primary tombolTambahDataInventaris" data-toggle="modal" data-target="#inventarisModal">
                         <i class="fa fa-plus-circle"></i> Tambah Data
                     </button>
 
@@ -48,6 +48,7 @@
                                 <div class="modal-body">
                                     <!-- form inputan -->
                                     <form action="<?= BASEURL; ?>/dinventaris/tambah" method="POST">
+                                        <input type="hidden" name="id_inventaris" id="id_inventaris">
                                         <div class="form-group">
                                             <label for="id_ruangan">Ruang</label>
                                             <select class="form-control" id="id_ruangan" name="id_ruangan">
@@ -114,7 +115,7 @@
                                 <td><?= $invent['ket_inventaris']; ?></td>
                                 <td class="text-center">
 
-                                    <a href="#" class="badge badge-pill badge-warning"><i class="fa fa-pencil-square-o"></i> Ubah</a>
+                                    <a href="<?= BASEURL; ?>/dinventaris/ubah/<?= $invent['id_inventaris']; ?>" class="badge badge-pill badge-warning tampilModalUbahInventaris" data-toggle="modal" data-target="#inventarisModal" data-id_inventaris="<?= $invent['id_inventaris']; ?>"><i class="fa fa-pencil-square-o"></i> Ubah</a>
                                     <a href="<?= BASEURL; ?>/dinventaris/hapus/<?= $invent['id_inventaris']; ?>" class="badge badge-pill badge-danger" onclick="return confirm('Apakah Anda Yakin?');"><i class="fa fa-trash-o"></i> Hapus</a>
                                     <a href="#" class="badge badge-pill badge-success" data-toggle="modal" data-target="#modalPinjam"><i class="fa fa-check-square-o"></i> Pinjam</a>
                                 </td>

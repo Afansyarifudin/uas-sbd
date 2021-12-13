@@ -15,6 +15,7 @@
     <!-- akhir flasher -->
 
     <!-- kontennya page disini -->
+
     <!-- Dipinjam -->
     <div class="card shadow">
         <div class="card-header py-3">
@@ -55,7 +56,7 @@
                                 <td><?= $pmj['tgl_peminjaman']; ?></td>
                                 <td><?= $pmj['ket_peminjaman']; ?></td>
                                 <td class="text-center">
-                                    <a href="<?= BASEURL; ?>/peminjaman/ubah/<?= $pmj['id_peminjaman']; ?>" class="badge badge-pill badge-warning"><i class="fa fa-pencil-square-o"></i> Ubah</a>
+                                    <!-- <a href="<?= BASEURL; ?>/peminjaman/ubah/<?= $pmj['id_peminjaman']; ?>" class="badge badge-pill badge-warning"><i class="fa fa-pencil-square-o"></i> Ubah</a> -->
                                     <a href="<?= BASEURL; ?>/peminjaman/hapus/<?= $pmj['id_peminjaman']; ?>" class="badge badge-pill badge-danger" onclick="return confirm('Apakah Anda Yakin?');"><i class="fa fa-trash-o"></i> Hapus</a>
                                     <a href="#" class="badge badge-pill badge-success" data-toggle="modal" data-target="#modalKembali"><i class="fa fa-check-square-o"></i> Kembalikan</a>
                                 </td>

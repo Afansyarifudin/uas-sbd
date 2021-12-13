@@ -50,4 +50,22 @@ class Dinventaris extends Controller
             exit;
         }
     }
+
+    public function getubahinventaris()
+    {
+        echo json_encode($this->model('Dinventaris_model')->getInventarisById($_POST['id_inventaris']));
+    }
+
+    public function ubah()
+    {
+        if ($this->model('Dinventaris_model')->ubahDataInventaris($_POST) > 0) {
+            Flasher::setFlash('berhasil', 'diubah', 'success');
+            header('Location: ' . BASEURL . '/dinventaris');
+            exit;
+        } else {
+            Flasher::setFlash('gagal', 'diubah', 'danger');
+            header('Location: ' . BASEURL . '/dinventaris');
+            exit;
+        }
+    }
 }
