@@ -7,6 +7,7 @@ class Dinventaris extends Controller
         $data['ruang'] = $this->model('Ruangan_model')->getAllRuangan();
         $data['invent'] = $this->model('Dinventaris_model')->getAllInventaris();
         $data['usr'] = $this->model('User_model')->getAllUser();
+        $data['inv'] = $this->model('Dinventaris_model')->joinInventaris();
         $this->view('templates/header');
         $this->view('dinventaris/index', $data);
         $this->view('templates/footer');

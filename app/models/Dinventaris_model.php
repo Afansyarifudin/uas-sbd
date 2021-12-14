@@ -23,6 +23,13 @@ class Dinventaris_model
         return $this->db->resultSet();
     }
 
+    public function joinInventaris()
+    {
+        $this->db->query("SELECT inventaris.nama_inventaris, inventaris.tgl_inventaris, ruangan.nama_ruangan  FROM inventaris
+            JOIN ruangan ON ruangan.id_ruangan = inventaris.id_ruangan");
+        return $this->db->resultSet();
+    }
+
     public function tambahDataDinventaris($data)
     {
         $query = " INSERT INTO inventaris

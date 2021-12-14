@@ -198,12 +198,3 @@ $(function() {
 
 });
 
-// PEMINJAMAN
-$(function() {
-
-    // tombol tambah peminjaman 
-
-
-    // tombol ubah peminjaman
-
-});
