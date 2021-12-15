@@ -1,5 +1,3 @@
-# BUDAYAKAN MEMBACA DULU GESS
-
 # Project Akhir UAS Sistem Basis Data
 
 Dosen: Pak Jumanto
