@@ -23,7 +23,6 @@ Install Requirements
 - JANGAN LUPA BUAT DATABASE DI LOCAL YA kasih nama inventori; databasenya menggunakan phpmyadmin
 
 Database 
-![Sistem Informasi Peminjaman Barang-Detail-Tabel drawio](https://user-images.githubusercontent.com/68774609/144694872-bbcb8d51-bed4-445d-997c-276d0f582487.png)
 
 # DEVELOP
 
