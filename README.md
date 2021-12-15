@@ -1,6 +1,7 @@
 # Project Akhir UAS Sistem Basis Data
 
-Dosen pengampu : Pak Jumanto
+Dosen pengampu : Bapak Jumanto, S.Kom., M.Cs.
+
 
 # ProjectAkhirSBD
 
