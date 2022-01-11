@@ -20,7 +20,8 @@ Install Requirements
 
 - PHP 7.4.2 (minimal)
 - WEB Server (XAMPP, Laragon, WAMPP, dll) disarankan Laragon biar so sweet
-- JANGAN LUPA BUAT DATABASE DI LOCAL YA kasih nama inventori; databasenya menggunakan phpmyadmin
+- JANGAN LUPA BUAT DATABASE DI LOCAL YA kasih nama inventori
+
 
 Database 
 ![Sistem Informasi Inventori Barang-Detail-Tabel drawio](https://user-images.githubusercontent.com/68774609/146112571-07ed3d08-0273-4e16-9fcd-5d09ca5caabb.png)
